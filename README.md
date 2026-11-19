@@ -28,8 +28,9 @@ post-injury; **77,375 cells, 26 clusters** after SCT/rPCA integration).
 
 **Not in this repository (by design):**
 - **Raw data** — public in NCBI GEO: GSE227190, GSE159032, GSE262689.
-- **Integrated Seurat objects** (`.rds`, ~4.6 GB) — exceed GitHub's file limit;
-  archived on Zenodo (DOI in the manuscript's Data Availability) or available on request.
+- **Integrated Seurat objects** (`.rds`, ~4.9 GB each) — exceed GitHub's file
+  limit; archived on Zenodo, **DOI: [10.5281/zenodo.24376110](https://doi.org/10.5281/zenodo.24376110)**
+  (reserved; resolves once the Zenodo record is published).
 - **Manuscript file** — not deposited here.
 
 ## Reproduction order
