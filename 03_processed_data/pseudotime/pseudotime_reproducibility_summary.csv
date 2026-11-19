@@ -1,0 +1,6 @@
+"cell_type","n_new","n_old","n_matched","n_finite","spearman","pearson"
+"Cardiomyocytes",11938,11938,11938,11938,1,1
+"Endocardial_cell",18879,18879,18879,18879,1,1
+"Fibroblasts",876,876,876,876,1,1
+"Macrophages",3936,3936,3936,3936,1,1
+"Epicardial_cell",7036,7036,7036,7036,1,1
