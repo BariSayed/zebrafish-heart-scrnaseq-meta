@@ -2,7 +2,7 @@
 
 Analysis code, processed data, figures, and tables for a meta-analysis of
 single-cell transcriptomic (scRNA-seq) responses to cardiac injury in zebrafish
-(*Danio rerio*). Three public GEO datasets **GSE227190**, **GSE159032**,
+(*Danio rerio*). Three public GEO datasets — **GSE227190**, **GSE159032**,
 **GSE262689** — are integrated into a single atlas (22 samples, 0–14 days
 post-injury; **77,375 cells, 26 clusters** after SCT/rPCA integration).
 
@@ -41,7 +41,7 @@ post-injury; **77,375 cells, 26 clusters** after SCT/rPCA integration).
 3. `02_code/02_annotation/markers.R` — `PrepSCTFindMarkers` + `FindAllMarkers`
    (SCT assay, min.pct 0.25, logfc 0.25) → cluster marker tables.
 4. `02_code/03_differential_expression/` — pseudobulk aggregation → DESeq2
-   (`~ Dataset + Condition`) → `flag_mt_ribo.R` → `pseudobulk_DESeq2_results_FINAL.csv`.
+   (`~ Dataset + Condition`) → `flag_mt_ribo.R` → `pseudobulk_DESeq2_results.csv`.
 5. `02_code/figures/Figure6A_enrichment_analysis.R` — GO-BP & KEGG per cluster.
 6. `02_code/figures/Figure7A_pseudotime_compute_4celltypes.R` and
    `Figure7B_pseudotime_compute_epicardial.R` — Monocle3 trajectories.

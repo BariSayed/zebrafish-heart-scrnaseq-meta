@@ -55,7 +55,7 @@ obj[["RNA"]] <- JoinLayers(obj[["RNA"]])
 obj <- NormalizeData(obj, verbose = FALSE)
 cat("RNA layers joined and normalized on full object.\n")
 
-# Cell-type -> cluster mapping, from new_cluster_annotation_FINAL.csv
+# Cell-type -> cluster mapping, from new_cluster_annotation.csv
 celltype_clusters <- list(
   "Cardiomyocytes"    = c(2, 5),
   "Endocardial_cell"  = c(0, 8, 12),   # includes cluster 12, "Endocardial cell (frzb+)"

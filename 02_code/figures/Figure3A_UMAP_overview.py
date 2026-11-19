@@ -1,6 +1,6 @@
 # ============================================================================
 # Figure 3A | Integrated UMAP overview, 6 panels (cluster/cell-type/GSE/dpi/condition + legend)
-# INPUT:  umap_full_export.csv.gz + new_cluster_annotation_FINAL.csv (cluster->cell_type)
+# INPUT:  umap_full_export.csv.gz + new_cluster_annotation.csv (cluster->cell_type)
 # OUTPUT: Figure_3A.png  (assembled with Figure3B into manuscript Figure 3)
 # NOTE: df + colour maps (originally defined in upstream cells) are inlined here so the script is standalone.
 # ============================================================================
@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from figure_style import apply_figure_style   # or: load the figure-style skill
 # ---- load UMAP export + annotate cell_type ----
 df  = pd.read_csv("umap_full_export.csv.gz", compression='gzip')
-ann = pd.read_csv("new_cluster_annotation_FINAL.csv")
+ann = pd.read_csv("new_cluster_annotation.csv")
 df['cell_type'] = df['cluster'].map(dict(zip(ann['new_cluster'], ann['final_cell_type'])))
 assert df['cell_type'].isna().sum()==0, "unmapped clusters"
 # ---- cluster colour map (tab20 + tab20b, 26) ----

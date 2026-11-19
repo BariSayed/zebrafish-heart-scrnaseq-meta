@@ -24,7 +24,7 @@ if (n_levels != 26) {
        ". Do not proceed -- re-verify which column holds the integrated-assay solution.")
 }
 
-annot <- read.csv("new_cluster_annotation_FINAL.csv")
+annot <- read.csv("new_cluster_annotation.csv")
 cluster_to_celltype <- setNames(annot$final_cell_type, as.character(annot$new_cluster))
 
 obj$cluster_id <- as.character(obj@meta.data[[cluster_col]])

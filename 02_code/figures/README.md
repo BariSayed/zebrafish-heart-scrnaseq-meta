@@ -37,7 +37,7 @@ Figure6A ──► GO/KEGG_*_per_cluster.csv ─► Figure6B (Fig 6)
 ## Inputs each script expects
 - Figs 4, 7A, 7B: `Seurat_Integrated_reclustered.rds` (77,375-cell object).
 - Fig 2: `all_samples_seurat_list_raw.rds` (pre-QC per-sample list).
-- Figs 3A/3B: `umap_full_export.csv(.gz)` + `new_cluster_annotation_FINAL.csv`.
+- Figs 3A/3B: `umap_full_export.csv(.gz)` + `new_cluster_annotation.csv`.
 - Figs 7C/8: the five `*_pseudotime_values.csv` from 7A/7B.
 - Fig 6B: `GO_BP/KEGG_enrichment_{UP,DOWN}_per_cluster.csv` from 6A.
 - Fig 6A: `pseudobulk_DESeq2_results_PRIMARY.csv`.

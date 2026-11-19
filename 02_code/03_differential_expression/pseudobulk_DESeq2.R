@@ -37,8 +37,8 @@ if (length(cluster_col_candidates) == 0) {
 cluster_col <- cluster_col_candidates[1]  # EDIT if the wrong one is picked -- check the printed list above first
 cat("Using cluster column:", cluster_col, "\n")
 
-# Attach the cell-type labels from new_cluster_annotation_FINAL.csv (must be uploaded alongside this script)
-annot <- read.csv("new_cluster_annotation_FINAL.csv")
+# Attach the cell-type labels from new_cluster_annotation.csv (must be uploaded alongside this script)
+annot <- read.csv("new_cluster_annotation.csv")
 cluster_to_celltype <- setNames(annot$final_cell_type, as.character(annot$new_cluster))
 
 obj$cluster_id <- as.character(obj@meta.data[[cluster_col]])

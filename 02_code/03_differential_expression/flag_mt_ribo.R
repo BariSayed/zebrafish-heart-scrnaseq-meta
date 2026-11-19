@@ -9,8 +9,8 @@ de$exclude_from_primary <- de$gene_class %in% c("mitochondrial", "ribosomal_prot
 cat("Gene class breakdown (rows, all clusters combined):\n")
 print(table(de$gene_class))
 
-write.csv(de, "~/zebrafish/results/pseudobulk_DESeq2_results_FINAL.csv", row.names = FALSE)
-cat("\nSaved pseudobulk_DESeq2_results_FINAL.csv with gene_class and exclude_from_primary columns,", nrow(de), "rows\n")
+write.csv(de, "~/zebrafish/results/pseudobulk_DESeq2_results.csv", row.names = FALSE)
+cat("\nSaved pseudobulk_DESeq2_results.csv with gene_class and exclude_from_primary columns,", nrow(de), "rows\n")
 
 # Also save a "primary" (clean) subset for GO/KEGG universe + headline tables
 de_primary <- de[!de$exclude_from_primary, ]
