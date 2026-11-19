@@ -1,9 +1,9 @@
-Software environment — zebrafish heart-injury scRNA-seq meta-analysis
+Software environment - zebrafish heart-injury scRNA-seq meta-analysis
 =====================================================================
 Versions below were captured directly from the analysis server (not from memory).
 The pipeline uses three R environments plus Python/matplotlib for composite figures.
 
-[scrna]  conda env — integration, clustering, markers, Figs 2 & 4
+[scrna]  conda env - integration, clustering, markers, Figs 2 & 4
   R            4.3.3
   Seurat       5.4.0
   SeuratObject 5.3.0
@@ -13,7 +13,7 @@ The pipeline uses three R environments plus Python/matplotlib for composite figu
   dplyr        1.1.4
   (glmGamPoi used via SCTransform method = "glmGamPoi")
 
-[metaseq]  conda env — pseudobulk differential expression & enrichment, Fig 6
+[metaseq]  conda env - pseudobulk differential expression & enrichment, Fig 6
   R               4.4.3
   DESeq2          1.46.0
   clusterProfiler 4.14.0
@@ -21,19 +21,33 @@ The pipeline uses three R environments plus Python/matplotlib for composite figu
   AnnotationDbi   1.68.0
   enrichplot      1.26.1
 
-[system R 4.5.1]  — Monocle3 pseudotime (Figure7A / Figure7B)
-  R         4.5.1
-  monocle3  1.4.26   (recorded from the session that produced the pseudotime
-                      values; NOTE: monocle3 is NOT currently installed on the
-                      server and must be reinstalled to RE-RUN Figure7A/7B.
-                      The pseudotime VALUE tables it produced are provided in
-                      03_processed_data/pseudotime/, so Figure7C and Figure8
-                      reproduce without re-running Monocle3.)
-  SeuratWrappers    (as.cell_data_set bridge; same note as monocle3)
+[Monocle3 pseudotime - Figures 7A/7B]  (installed in the scrna env, R 4.3.3)
+  monocle3  1.4.27   Re-installed into the scrna env via conda-prebuilt system-
+                     library dependencies (sf, spdep, units, terra, xml2, Cairo,
+                     ragg, HDF5Array, rhdf5, BPCells) + remotes::install_github.
+                     The recorded original version was 1.4.26; its git tag is
+                     incompatible with the current dplyr, so 1.4.27 (one patch
+                     newer, identical pseudotime algorithm) was installed.
+  SeuratWrappers    Not installable against the current dplyr (it imports the
+                     removed dplyr::filter_out). as.cell_data_set() was therefore
+                     reproduced by a manual Seurat->Monocle3 CDS conversion
+                     (counts + cell/gene metadata + UMAP embedding). Pseudotime is
+                     determined by the UMAP graph + 0-dpi root, so this conversion
+                     is equivalent for the trajectory ordering.
 
-[Python 3.12.7]  — composite/plot figures (Figs 3, 6B, 7C, 8)
+  REPRODUCIBILITY CHECK (2026-11-19): re-running Figure7A/7B from
+  04_seurat_objects/Seurat_Integrated_reclustered.rds reproduced the committed
+  03_processed_data/pseudotime/*_pseudotime_values.csv EXACTLY for all five cell
+  types (Spearman = Pearson = 1.000; identical cell counts: Cardiomyocytes 11938,
+  Endocardial 18879, Fibroblasts 876, Macrophages 3936, Epicardial 7036).
+  See 03_processed_data/pseudotime/pseudotime_reproducibility_summary.csv.
+
+[Python 3.12.7]  - composite/plot figures (Figs 3, 6B, 7C, 8)
   matplotlib 3.9.2
   pandas     2.2.2
   numpy      1.26.4
+
+[Figure 5 composition heatmap]
+  ComplexHeatmap 2.26.1 + circlize (R 4.5.3, gbs_core conda env)
 
 Reference genome: GRCz11 (as deposited by the original studies; Cell Ranger).
