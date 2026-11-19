@@ -1,0 +1,27 @@
+Cluster,Cell_type,n_cells,pct_total,top_markers,Confidence_tier,Reference_author_year
+0,Endocardial cell,13870,17.93,"f8, efnb2b, notch1b, gpd1b",Tier 2,—
+1,Immature erythroid progenitor (low-confidence),7762,10.03,"tfr1a, epb41b, mbnl1 (weak)",Tier 3,—
+2,Cardiomyocytes,6813,8.81,"myl7, cmlc1, actc1a, ak1, gamt, fabp3",Tier 1,"Hu et al., 2022"
+3,Epicardial cells,6457,8.35,"tcf21, tbx18, dpt, hapln1a, sostdc1a",Tier 1,"Hu et al., 2022"
+4,Erythroid-thrombocyte progenitor (mixed blood lineage),5685,7.35,"gp9, hbba1-1, hemgn, alas2",Tier 3,—
+5,Cardiomyocytes (ventricular/sarcomeric),5125,6.62,"ttn.1, ttn.2, ryr2b, myom1b, myh7l",Tier 1,—
+6,Macrophages,3936,5.09,"c1qa, c1qb, c1qc, marco, mfap4",Tier 1,"Hu et al., 2022"
+7,Low-quality / mitochondrial-high,3812,4.93,"mt-atp8, mt-nd1, mt-nd3, mt-nd4l, mt-nd5, mt-co1",Tier 4,—
+8,Endocardial cell,3696,4.78,"nppc, klf2b, fosl1a, mycb",Tier 2,"Hu et al., 2022"
+9,Smooth muscle cell / pericyte,2985,3.86,"acta2, rgs5a, lmod1b, kng1",Tier 1,"Hu et al., 2022"
+10,T cells / lymphocytes,2890,3.74,"ptprc (CD45), ccr9a, cxcr4b, coro1a",Tier 2,—
+11,Thrombocytes,2131,2.75,"itga2b, itgb3b, mpl",Tier 1,—
+12,Vascular endothelial cells,1313,1.7,"vwf, edn2, frzb, cfd",Tier 1,"— (see note: marker set vwf/edn2/frzb/cfd mixes endocardium/fibroblast sub-cluster genes in Hu 2022, not a clean vascular-endothelial match)"
+13,Erythroid cells,1246,1.61,"hbaa1, hbaa2, hbba1, hbba2, cahz",Tier 1,—
+14,Vascular endothelial cells (fenestrated),1222,1.58,"plvapa, plvapb, cxcl12b",Tier 1,"Hu et al., 2022"
+15,Erythroid cells,1212,1.57,"hbaa1, hbaa2, hbba1, hbba2, cahz",Tier 1,—
+16,Proliferating / cycling cells (lineage-nonspecific),1043,1.35,"hmgn2, hmgb2b, hmga1a, tubb2b, tuba8l",Tier 2,"Hu et al., 2022"
+17,"Erythroid-thrombocyte progenitor (mixed blood lineage, low n)",1023,1.32,"gp9, hbba1-1, epb41b (weak)",Tier 3,—
+18,Neutrophils,926,1.2,"mpx, lyz, npsn, mmp13a-1",Tier 1,"Hu et al., 2022"
+19,Fibroblasts,876,1.13,"rspo1, ptx3a, tnfaip6, angptl7",Tier 1,"Ma et al., 2021"
+20,"Erythroid-thrombocyte progenitor (mixed blood lineage, weak/low-confidence)",865,1.12,"gp9, hemgn, alas2 (low significance)",Tier 3,—
+21,Perivascular cell / pericyte,643,0.83,"plp1b, pdgfrb, rgs4, agtr2",Tier 2,"Hu et al., 2022"
+22,Epicardial cell,579,0.75,"endouc, s100a10a, cldnc, adh8a",Tier 2,"Hu et al., 2022"
+23,Erythroid cells,560,0.72,"hbaa2, hbba2, hbba1-1, cahz",Tier 1,—
+24,apln+ injury-responsive cardiac endothelial cell,501,0.65,"sele, apln, il11b, hbegfb",Tier 2,—
+25,Lymphatic endothelial cells,204,0.26,"lyve1a, lyve1b, cldn11a, cxcl12a",Tier 1,"Hu et al., 2022"

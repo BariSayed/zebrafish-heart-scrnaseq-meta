@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this code or the processed data, please cite the associated manuscript and this repository."
+title: "Zebrafish heart-injury scRNA-seq meta-analysis: analysis code and processed data"
+abstract: "Analysis code, processed data, figures and tables for a meta-analysis integrating three public zebrafish (Danio rerio) cardiac-injury single-cell RNA-seq datasets (GSE227190, GSE159032, GSE262689) into a 77,375-cell, 26-cluster atlas of injury-response programs."
+type: dataset
+authors:
+  - family-names: Bari
+    given-names: "Sayed Mashequl"
+    affiliation: "Sher-e-Bangla Agricultural University, Dhaka, Bangladesh"
+  - family-names: Rahman
+    given-names: Zabid
+  - family-names: Mostafa
+    given-names: Fouzia
+  - family-names: Hossain
+    given-names: Muhaiminur
+  - family-names: Rahman
+    given-names: "Md. Arifur"
+  - family-names: Begum
+    given-names: Mahmuda
+  - family-names: Helal
+    given-names: "Md. Mostafa Uddin"
+date-released: 2026-11-19
+repository-code: "https://github.com/BariSayed/zebrafish-heart-scrnaseq-meta"
+license: MIT
+keywords:
+  - zebrafish
+  - Danio rerio
+  - heart regeneration
+  - single-cell RNA-seq
+  - scRNA-seq
+  - meta-analysis

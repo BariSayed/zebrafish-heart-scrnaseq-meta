@@ -1,0 +1,12 @@
+# Large / externally-hosted content (not tracked in this repo)
+01_raw_data/
+04_seurat_objects/
+08_manuscript/
+zenodo_upload/
+
+# Scratch / regenerable artifacts
+*.Rhistory
+.Rhistory
+*.Rproj.user
+__pycache__/
+.DS_Store

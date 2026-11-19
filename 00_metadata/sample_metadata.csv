@@ -1,0 +1,356 @@
+"pseudo_group","GSM","cluster_id","cell_type","Dataset","Condition","dpi","n_cells"
+"GSM4817932__0","GSM4817932","0","Endocardial cell","GSE159032","Healthy","0dpi",566
+"GSM4817932__1","GSM4817932","1","Immature erythroid progenitor (low-confidence)","GSE159032","Healthy","0dpi",88
+"GSM4817932__10","GSM4817932","10","T cells / lymphocytes","GSE159032","Healthy","0dpi",99
+"GSM4817932__12","GSM4817932","12","Vascular endothelial cells","GSE159032","Healthy","0dpi",347
+"GSM4817932__14","GSM4817932","14","Vascular endothelial cells (fenestrated)","GSE159032","Healthy","0dpi",112
+"GSM4817932__16","GSM4817932","16","Proliferating / cycling cells (lineage-nonspecific)","GSE159032","Healthy","0dpi",19
+"GSM4817932__19","GSM4817932","19","Fibroblasts","GSE159032","Healthy","0dpi",150
+"GSM4817932__2","GSM4817932","2","Cardiomyocytes","GSE159032","Healthy","0dpi",283
+"GSM4817932__21","GSM4817932","21","Perivascular cell / pericyte","GSE159032","Healthy","0dpi",55
+"GSM4817932__22","GSM4817932","22","Epicardial cell","GSE159032","Healthy","0dpi",15
+"GSM4817932__25","GSM4817932","25","Lymphatic endothelial cells","GSE159032","Healthy","0dpi",30
+"GSM4817932__3","GSM4817932","3","Epicardial cells","GSE159032","Healthy","0dpi",264
+"GSM4817932__4","GSM4817932","4","Erythroid-thrombocyte progenitor (mixed blood lineage)","GSE159032","Healthy","0dpi",47
+"GSM4817932__5","GSM4817932","5","Cardiomyocytes (ventricular/sarcomeric)","GSE159032","Healthy","0dpi",17
+"GSM4817932__6","GSM4817932","6","Macrophages","GSE159032","Healthy","0dpi",185
+"GSM4817932__8","GSM4817932","8","Endocardial cell","GSE159032","Healthy","0dpi",685
+"GSM4817932__9","GSM4817932","9","Smooth muscle cell / pericyte","GSE159032","Healthy","0dpi",1161
+"GSM4817939__0","GSM4817939","0","Endocardial cell","GSE159032","Injured","7dpi",588
+"GSM4817939__1","GSM4817939","1","Immature erythroid progenitor (low-confidence)","GSE159032","Injured","7dpi",225
+"GSM4817939__10","GSM4817939","10","T cells / lymphocytes","GSE159032","Injured","7dpi",491
+"GSM4817939__11","GSM4817939","11","Thrombocytes","GSE159032","Injured","7dpi",19
+"GSM4817939__12","GSM4817939","12","Vascular endothelial cells","GSE159032","Injured","7dpi",286
+"GSM4817939__14","GSM4817939","14","Vascular endothelial cells (fenestrated)","GSE159032","Injured","7dpi",260
+"GSM4817939__16","GSM4817939","16","Proliferating / cycling cells (lineage-nonspecific)","GSE159032","Injured","7dpi",84
+"GSM4817939__17","GSM4817939","17","Erythroid-thrombocyte progenitor (mixed blood lineage, low n)","GSE159032","Injured","7dpi",30
+"GSM4817939__18","GSM4817939","18","Neutrophils","GSE159032","Injured","7dpi",18
+"GSM4817939__19","GSM4817939","19","Fibroblasts","GSE159032","Injured","7dpi",208
+"GSM4817939__2","GSM4817939","2","Cardiomyocytes","GSE159032","Injured","7dpi",1410
+"GSM4817939__21","GSM4817939","21","Perivascular cell / pericyte","GSE159032","Injured","7dpi",159
+"GSM4817939__22","GSM4817939","22","Epicardial cell","GSE159032","Injured","7dpi",259
+"GSM4817939__23","GSM4817939","23","Erythroid cells","GSE159032","Injured","7dpi",27
+"GSM4817939__24","GSM4817939","24","apln+ injury-responsive cardiac endothelial cell","GSE159032","Injured","7dpi",80
+"GSM4817939__25","GSM4817939","25","Lymphatic endothelial cells","GSE159032","Injured","7dpi",66
+"GSM4817939__3","GSM4817939","3","Epicardial cells","GSE159032","Injured","7dpi",1474
+"GSM4817939__4","GSM4817939","4","Erythroid-thrombocyte progenitor (mixed blood lineage)","GSE159032","Injured","7dpi",232
+"GSM4817939__5","GSM4817939","5","Cardiomyocytes (ventricular/sarcomeric)","GSE159032","Injured","7dpi",151
+"GSM4817939__6","GSM4817939","6","Macrophages","GSE159032","Injured","7dpi",611
+"GSM4817939__8","GSM4817939","8","Endocardial cell","GSE159032","Injured","7dpi",1236
+"GSM4817939__9","GSM4817939","9","Smooth muscle cell / pericyte","GSE159032","Injured","7dpi",849
+"GSM4817941__0","GSM4817941","0","Endocardial cell","GSE159032","Injured","7dpi",561
+"GSM4817941__1","GSM4817941","1","Immature erythroid progenitor (low-confidence)","GSE159032","Injured","7dpi",168
+"GSM4817941__10","GSM4817941","10","T cells / lymphocytes","GSE159032","Injured","7dpi",171
+"GSM4817941__11","GSM4817941","11","Thrombocytes","GSE159032","Injured","7dpi",20
+"GSM4817941__12","GSM4817941","12","Vascular endothelial cells","GSE159032","Injured","7dpi",327
+"GSM4817941__14","GSM4817941","14","Vascular endothelial cells (fenestrated)","GSE159032","Injured","7dpi",175
+"GSM4817941__16","GSM4817941","16","Proliferating / cycling cells (lineage-nonspecific)","GSE159032","Injured","7dpi",39
+"GSM4817941__17","GSM4817941","17","Erythroid-thrombocyte progenitor (mixed blood lineage, low n)","GSE159032","Injured","7dpi",19
+"GSM4817941__18","GSM4817941","18","Neutrophils","GSE159032","Injured","7dpi",29
+"GSM4817941__19","GSM4817941","19","Fibroblasts","GSE159032","Injured","7dpi",241
+"GSM4817941__2","GSM4817941","2","Cardiomyocytes","GSE159032","Injured","7dpi",954
+"GSM4817941__21","GSM4817941","21","Perivascular cell / pericyte","GSE159032","Injured","7dpi",141
+"GSM4817941__22","GSM4817941","22","Epicardial cell","GSE159032","Injured","7dpi",146
+"GSM4817941__23","GSM4817941","23","Erythroid cells","GSE159032","Injured","7dpi",518
+"GSM4817941__24","GSM4817941","24","apln+ injury-responsive cardiac endothelial cell","GSE159032","Injured","7dpi",110
+"GSM4817941__25","GSM4817941","25","Lymphatic endothelial cells","GSE159032","Injured","7dpi",62
+"GSM4817941__3","GSM4817941","3","Epicardial cells","GSE159032","Injured","7dpi",927
+"GSM4817941__4","GSM4817941","4","Erythroid-thrombocyte progenitor (mixed blood lineage)","GSE159032","Injured","7dpi",127
+"GSM4817941__5","GSM4817941","5","Cardiomyocytes (ventricular/sarcomeric)","GSE159032","Injured","7dpi",54
+"GSM4817941__6","GSM4817941","6","Macrophages","GSE159032","Injured","7dpi",346
+"GSM4817941__8","GSM4817941","8","Endocardial cell","GSE159032","Injured","7dpi",498
+"GSM4817941__9","GSM4817941","9","Smooth muscle cell / pericyte","GSE159032","Injured","7dpi",926
+"GSM7092936__0","GSM7092936","0","Endocardial cell","GSE227190","Injured","1dpi",10
+"GSM7092936__1","GSM7092936","1","Immature erythroid progenitor (low-confidence)","GSE227190","Injured","1dpi",508
+"GSM7092936__10","GSM7092936","10","T cells / lymphocytes","GSE227190","Injured","1dpi",135
+"GSM7092936__11","GSM7092936","11","Thrombocytes","GSE227190","Injured","1dpi",27
+"GSM7092936__15","GSM7092936","15","Erythroid cells","GSE227190","Injured","1dpi",83
+"GSM7092936__16","GSM7092936","16","Proliferating / cycling cells (lineage-nonspecific)","GSE227190","Injured","1dpi",118
+"GSM7092936__17","GSM7092936","17","Erythroid-thrombocyte progenitor (mixed blood lineage, low n)","GSE227190","Injured","1dpi",167
+"GSM7092936__18","GSM7092936","18","Neutrophils","GSE227190","Injured","1dpi",146
+"GSM7092936__2","GSM7092936","2","Cardiomyocytes","GSE227190","Injured","1dpi",31
+"GSM7092936__20","GSM7092936","20","Erythroid-thrombocyte progenitor (mixed blood lineage, weak/low-confidence)","GSE227190","Injured","1dpi",119
+"GSM7092936__24","GSM7092936","24","apln+ injury-responsive cardiac endothelial cell","GSE227190","Injured","1dpi",81
+"GSM7092936__3","GSM7092936","3","Epicardial cells","GSE227190","Injured","1dpi",13
+"GSM7092936__4","GSM7092936","4","Erythroid-thrombocyte progenitor (mixed blood lineage)","GSE227190","Injured","1dpi",742
+"GSM7092936__6","GSM7092936","6","Macrophages","GSE227190","Injured","1dpi",369
+"GSM7092936__8","GSM7092936","8","Endocardial cell","GSE227190","Injured","1dpi",22
+"GSM7092937__1","GSM7092937","1","Immature erythroid progenitor (low-confidence)","GSE227190","Injured","1dpi",499
+"GSM7092937__10","GSM7092937","10","T cells / lymphocytes","GSE227190","Injured","1dpi",97
+"GSM7092937__11","GSM7092937","11","Thrombocytes","GSE227190","Injured","1dpi",25
+"GSM7092937__15","GSM7092937","15","Erythroid cells","GSE227190","Injured","1dpi",91
+"GSM7092937__16","GSM7092937","16","Proliferating / cycling cells (lineage-nonspecific)","GSE227190","Injured","1dpi",108
+"GSM7092937__17","GSM7092937","17","Erythroid-thrombocyte progenitor (mixed blood lineage, low n)","GSE227190","Injured","1dpi",278
+"GSM7092937__18","GSM7092937","18","Neutrophils","GSE227190","Injured","1dpi",196
+"GSM7092937__2","GSM7092937","2","Cardiomyocytes","GSE227190","Injured","1dpi",33
+"GSM7092937__20","GSM7092937","20","Erythroid-thrombocyte progenitor (mixed blood lineage, weak/low-confidence)","GSE227190","Injured","1dpi",125
+"GSM7092937__24","GSM7092937","24","apln+ injury-responsive cardiac endothelial cell","GSE227190","Injured","1dpi",50
+"GSM7092937__3","GSM7092937","3","Epicardial cells","GSE227190","Injured","1dpi",10
+"GSM7092937__4","GSM7092937","4","Erythroid-thrombocyte progenitor (mixed blood lineage)","GSE227190","Injured","1dpi",885
+"GSM7092937__6","GSM7092937","6","Macrophages","GSE227190","Injured","1dpi",272
+"GSM7092937__8","GSM7092937","8","Endocardial cell","GSE227190","Injured","1dpi",18
+"GSM7092944__0","GSM7092944","0","Endocardial cell","GSE227190","Injured","7dpi",20
+"GSM7092944__1","GSM7092944","1","Immature erythroid progenitor (low-confidence)","GSE227190","Injured","7dpi",402
+"GSM7092944__10","GSM7092944","10","T cells / lymphocytes","GSE227190","Injured","7dpi",258
+"GSM7092944__11","GSM7092944","11","Thrombocytes","GSE227190","Injured","7dpi",29
+"GSM7092944__14","GSM7092944","14","Vascular endothelial cells (fenestrated)","GSE227190","Injured","7dpi",27
+"GSM7092944__15","GSM7092944","15","Erythroid cells","GSE227190","Injured","7dpi",163
+"GSM7092944__16","GSM7092944","16","Proliferating / cycling cells (lineage-nonspecific)","GSE227190","Injured","7dpi",41
+"GSM7092944__17","GSM7092944","17","Erythroid-thrombocyte progenitor (mixed blood lineage, low n)","GSE227190","Injured","7dpi",115
+"GSM7092944__18","GSM7092944","18","Neutrophils","GSE227190","Injured","7dpi",41
+"GSM7092944__2","GSM7092944","2","Cardiomyocytes","GSE227190","Injured","7dpi",51
+"GSM7092944__20","GSM7092944","20","Erythroid-thrombocyte progenitor (mixed blood lineage, weak/low-confidence)","GSE227190","Injured","7dpi",56
+"GSM7092944__24","GSM7092944","24","apln+ injury-responsive cardiac endothelial cell","GSE227190","Injured","7dpi",38
+"GSM7092944__3","GSM7092944","3","Epicardial cells","GSE227190","Injured","7dpi",27
+"GSM7092944__4","GSM7092944","4","Erythroid-thrombocyte progenitor (mixed blood lineage)","GSE227190","Injured","7dpi",906
+"GSM7092944__5","GSM7092944","5","Cardiomyocytes (ventricular/sarcomeric)","GSE227190","Injured","7dpi",10
+"GSM7092944__6","GSM7092944","6","Macrophages","GSE227190","Injured","7dpi",316
+"GSM7092944__8","GSM7092944","8","Endocardial cell","GSE227190","Injured","7dpi",41
+"GSM7092945__0","GSM7092945","0","Endocardial cell","GSE227190","Injured","7dpi",14
+"GSM7092945__1","GSM7092945","1","Immature erythroid progenitor (low-confidence)","GSE227190","Injured","7dpi",290
+"GSM7092945__10","GSM7092945","10","T cells / lymphocytes","GSE227190","Injured","7dpi",224
+"GSM7092945__11","GSM7092945","11","Thrombocytes","GSE227190","Injured","7dpi",52
+"GSM7092945__14","GSM7092945","14","Vascular endothelial cells (fenestrated)","GSE227190","Injured","7dpi",16
+"GSM7092945__15","GSM7092945","15","Erythroid cells","GSE227190","Injured","7dpi",81
+"GSM7092945__16","GSM7092945","16","Proliferating / cycling cells (lineage-nonspecific)","GSE227190","Injured","7dpi",26
+"GSM7092945__17","GSM7092945","17","Erythroid-thrombocyte progenitor (mixed blood lineage, low n)","GSE227190","Injured","7dpi",27
+"GSM7092945__18","GSM7092945","18","Neutrophils","GSE227190","Injured","7dpi",32
+"GSM7092945__2","GSM7092945","2","Cardiomyocytes","GSE227190","Injured","7dpi",76
+"GSM7092945__20","GSM7092945","20","Erythroid-thrombocyte progenitor (mixed blood lineage, weak/low-confidence)","GSE227190","Injured","7dpi",30
+"GSM7092945__24","GSM7092945","24","apln+ injury-responsive cardiac endothelial cell","GSE227190","Injured","7dpi",53
+"GSM7092945__3","GSM7092945","3","Epicardial cells","GSE227190","Injured","7dpi",16
+"GSM7092945__4","GSM7092945","4","Erythroid-thrombocyte progenitor (mixed blood lineage)","GSE227190","Injured","7dpi",242
+"GSM7092945__6","GSM7092945","6","Macrophages","GSE227190","Injured","7dpi",257
+"GSM7092945__8","GSM7092945","8","Endocardial cell","GSE227190","Injured","7dpi",38
+"GSM7092952__0","GSM7092952","0","Endocardial cell","GSE227190","Healthy","0dpi",14
+"GSM7092952__1","GSM7092952","1","Immature erythroid progenitor (low-confidence)","GSE227190","Healthy","0dpi",318
+"GSM7092952__10","GSM7092952","10","T cells / lymphocytes","GSE227190","Healthy","0dpi",138
+"GSM7092952__11","GSM7092952","11","Thrombocytes","GSE227190","Healthy","0dpi",18
+"GSM7092952__14","GSM7092952","14","Vascular endothelial cells (fenestrated)","GSE227190","Healthy","0dpi",14
+"GSM7092952__15","GSM7092952","15","Erythroid cells","GSE227190","Healthy","0dpi",82
+"GSM7092952__17","GSM7092952","17","Erythroid-thrombocyte progenitor (mixed blood lineage, low n)","GSE227190","Healthy","0dpi",59
+"GSM7092952__18","GSM7092952","18","Neutrophils","GSE227190","Healthy","0dpi",19
+"GSM7092952__2","GSM7092952","2","Cardiomyocytes","GSE227190","Healthy","0dpi",167
+"GSM7092952__20","GSM7092952","20","Erythroid-thrombocyte progenitor (mixed blood lineage, weak/low-confidence)","GSE227190","Healthy","0dpi",87
+"GSM7092952__24","GSM7092952","24","apln+ injury-responsive cardiac endothelial cell","GSE227190","Healthy","0dpi",32
+"GSM7092952__3","GSM7092952","3","Epicardial cells","GSE227190","Healthy","0dpi",40
+"GSM7092952__4","GSM7092952","4","Erythroid-thrombocyte progenitor (mixed blood lineage)","GSE227190","Healthy","0dpi",499
+"GSM7092952__5","GSM7092952","5","Cardiomyocytes (ventricular/sarcomeric)","GSE227190","Healthy","0dpi",59
+"GSM7092952__6","GSM7092952","6","Macrophages","GSE227190","Healthy","0dpi",130
+"GSM7092952__8","GSM7092952","8","Endocardial cell","GSE227190","Healthy","0dpi",111
+"GSM7092953__0","GSM7092953","0","Endocardial cell","GSE227190","Healthy","0dpi",35
+"GSM7092953__1","GSM7092953","1","Immature erythroid progenitor (low-confidence)","GSE227190","Healthy","0dpi",271
+"GSM7092953__10","GSM7092953","10","T cells / lymphocytes","GSE227190","Healthy","0dpi",103
+"GSM7092953__11","GSM7092953","11","Thrombocytes","GSE227190","Healthy","0dpi",22
+"GSM7092953__14","GSM7092953","14","Vascular endothelial cells (fenestrated)","GSE227190","Healthy","0dpi",26
+"GSM7092953__15","GSM7092953","15","Erythroid cells","GSE227190","Healthy","0dpi",101
+"GSM7092953__17","GSM7092953","17","Erythroid-thrombocyte progenitor (mixed blood lineage, low n)","GSE227190","Healthy","0dpi",68
+"GSM7092953__2","GSM7092953","2","Cardiomyocytes","GSE227190","Healthy","0dpi",160
+"GSM7092953__20","GSM7092953","20","Erythroid-thrombocyte progenitor (mixed blood lineage, weak/low-confidence)","GSE227190","Healthy","0dpi",83
+"GSM7092953__24","GSM7092953","24","apln+ injury-responsive cardiac endothelial cell","GSE227190","Healthy","0dpi",36
+"GSM7092953__3","GSM7092953","3","Epicardial cells","GSE227190","Healthy","0dpi",23
+"GSM7092953__4","GSM7092953","4","Erythroid-thrombocyte progenitor (mixed blood lineage)","GSE227190","Healthy","0dpi",437
+"GSM7092953__5","GSM7092953","5","Cardiomyocytes (ventricular/sarcomeric)","GSE227190","Healthy","0dpi",67
+"GSM7092953__6","GSM7092953","6","Macrophages","GSE227190","Healthy","0dpi",135
+"GSM7092953__8","GSM7092953","8","Endocardial cell","GSE227190","Healthy","0dpi",147
+"GSM8173831__0","GSM8173831","0","Endocardial cell","GSE262689","Healthy","0dpi",775
+"GSM8173831__1","GSM8173831","1","Immature erythroid progenitor (low-confidence)","GSE262689","Healthy","0dpi",43
+"GSM8173831__10","GSM8173831","10","T cells / lymphocytes","GSE262689","Healthy","0dpi",58
+"GSM8173831__11","GSM8173831","11","Thrombocytes","GSE262689","Healthy","0dpi",24
+"GSM8173831__12","GSM8173831","12","Vascular endothelial cells","GSE262689","Healthy","0dpi",11
+"GSM8173831__13","GSM8173831","13","Erythroid cells","GSE262689","Healthy","0dpi",220
+"GSM8173831__14","GSM8173831","14","Vascular endothelial cells (fenestrated)","GSE262689","Healthy","0dpi",11
+"GSM8173831__19","GSM8173831","19","Fibroblasts","GSE262689","Healthy","0dpi",10
+"GSM8173831__2","GSM8173831","2","Cardiomyocytes","GSE262689","Healthy","0dpi",137
+"GSM8173831__3","GSM8173831","3","Epicardial cells","GSE262689","Healthy","0dpi",110
+"GSM8173831__4","GSM8173831","4","Erythroid-thrombocyte progenitor (mixed blood lineage)","GSE262689","Healthy","0dpi",16
+"GSM8173831__5","GSM8173831","5","Cardiomyocytes (ventricular/sarcomeric)","GSE262689","Healthy","0dpi",155
+"GSM8173831__6","GSM8173831","6","Macrophages","GSE262689","Healthy","0dpi",36
+"GSM8173831__8","GSM8173831","8","Endocardial cell","GSE262689","Healthy","0dpi",228
+"GSM8173832__0","GSM8173832","0","Endocardial cell","GSE262689","Healthy","0dpi",1844
+"GSM8173832__1","GSM8173832","1","Immature erythroid progenitor (low-confidence)","GSE262689","Healthy","0dpi",120
+"GSM8173832__10","GSM8173832","10","T cells / lymphocytes","GSE262689","Healthy","0dpi",57
+"GSM8173832__11","GSM8173832","11","Thrombocytes","GSE262689","Healthy","0dpi",14
+"GSM8173832__12","GSM8173832","12","Vascular endothelial cells","GSE262689","Healthy","0dpi",32
+"GSM8173832__13","GSM8173832","13","Erythroid cells","GSE262689","Healthy","0dpi",265
+"GSM8173832__14","GSM8173832","14","Vascular endothelial cells (fenestrated)","GSE262689","Healthy","0dpi",26
+"GSM8173832__16","GSM8173832","16","Proliferating / cycling cells (lineage-nonspecific)","GSE262689","Healthy","0dpi",15
+"GSM8173832__19","GSM8173832","19","Fibroblasts","GSE262689","Healthy","0dpi",49
+"GSM8173832__2","GSM8173832","2","Cardiomyocytes","GSE262689","Healthy","0dpi",203
+"GSM8173832__21","GSM8173832","21","Perivascular cell / pericyte","GSE262689","Healthy","0dpi",10
+"GSM8173832__22","GSM8173832","22","Epicardial cell","GSE262689","Healthy","0dpi",11
+"GSM8173832__3","GSM8173832","3","Epicardial cells","GSE262689","Healthy","0dpi",239
+"GSM8173832__4","GSM8173832","4","Erythroid-thrombocyte progenitor (mixed blood lineage)","GSE262689","Healthy","0dpi",102
+"GSM8173832__5","GSM8173832","5","Cardiomyocytes (ventricular/sarcomeric)","GSE262689","Healthy","0dpi",500
+"GSM8173832__6","GSM8173832","6","Macrophages","GSE262689","Healthy","0dpi",59
+"GSM8173832__8","GSM8173832","8","Endocardial cell","GSE262689","Healthy","0dpi",386
+"GSM8173833__0","GSM8173833","0","Endocardial cell","GSE262689","Healthy","0dpi",1164
+"GSM8173833__10","GSM8173833","10","T cells / lymphocytes","GSE262689","Healthy","0dpi",45
+"GSM8173833__11","GSM8173833","11","Thrombocytes","GSE262689","Healthy","0dpi",36
+"GSM8173833__12","GSM8173833","12","Vascular endothelial cells","GSE262689","Healthy","0dpi",59
+"GSM8173833__14","GSM8173833","14","Vascular endothelial cells (fenestrated)","GSE262689","Healthy","0dpi",35
+"GSM8173833__16","GSM8173833","16","Proliferating / cycling cells (lineage-nonspecific)","GSE262689","Healthy","0dpi",19
+"GSM8173833__19","GSM8173833","19","Fibroblasts","GSE262689","Healthy","0dpi",67
+"GSM8173833__2","GSM8173833","2","Cardiomyocytes","GSE262689","Healthy","0dpi",248
+"GSM8173833__20","GSM8173833","20","Erythroid-thrombocyte progenitor (mixed blood lineage, weak/low-confidence)","GSE262689","Healthy","0dpi",41
+"GSM8173833__21","GSM8173833","21","Perivascular cell / pericyte","GSE262689","Healthy","0dpi",16
+"GSM8173833__3","GSM8173833","3","Epicardial cells","GSE262689","Healthy","0dpi",144
+"GSM8173833__4","GSM8173833","4","Erythroid-thrombocyte progenitor (mixed blood lineage)","GSE262689","Healthy","0dpi",53
+"GSM8173833__5","GSM8173833","5","Cardiomyocytes (ventricular/sarcomeric)","GSE262689","Healthy","0dpi",426
+"GSM8173833__6","GSM8173833","6","Macrophages","GSE262689","Healthy","0dpi",49
+"GSM8173833__8","GSM8173833","8","Endocardial cell","GSE262689","Healthy","0dpi",68
+"GSM8173834__0","GSM8173834","0","Endocardial cell","GSE262689","Healthy","0dpi",830
+"GSM8173834__10","GSM8173834","10","T cells / lymphocytes","GSE262689","Healthy","0dpi",62
+"GSM8173834__11","GSM8173834","11","Thrombocytes","GSE262689","Healthy","0dpi",23
+"GSM8173834__12","GSM8173834","12","Vascular endothelial cells","GSE262689","Healthy","0dpi",81
+"GSM8173834__14","GSM8173834","14","Vascular endothelial cells (fenestrated)","GSE262689","Healthy","0dpi",36
+"GSM8173834__16","GSM8173834","16","Proliferating / cycling cells (lineage-nonspecific)","GSE262689","Healthy","0dpi",12
+"GSM8173834__17","GSM8173834","17","Erythroid-thrombocyte progenitor (mixed blood lineage, low n)","GSE262689","Healthy","0dpi",18
+"GSM8173834__18","GSM8173834","18","Neutrophils","GSE262689","Healthy","0dpi",11
+"GSM8173834__19","GSM8173834","19","Fibroblasts","GSE262689","Healthy","0dpi",59
+"GSM8173834__2","GSM8173834","2","Cardiomyocytes","GSE262689","Healthy","0dpi",467
+"GSM8173834__21","GSM8173834","21","Perivascular cell / pericyte","GSE262689","Healthy","0dpi",15
+"GSM8173834__22","GSM8173834","22","Epicardial cell","GSE262689","Healthy","0dpi",13
+"GSM8173834__3","GSM8173834","3","Epicardial cells","GSE262689","Healthy","0dpi",386
+"GSM8173834__4","GSM8173834","4","Erythroid-thrombocyte progenitor (mixed blood lineage)","GSE262689","Healthy","0dpi",19
+"GSM8173834__5","GSM8173834","5","Cardiomyocytes (ventricular/sarcomeric)","GSE262689","Healthy","0dpi",628
+"GSM8173834__6","GSM8173834","6","Macrophages","GSE262689","Healthy","0dpi",61
+"GSM8173834__8","GSM8173834","8","Endocardial cell","GSE262689","Healthy","0dpi",38
+"GSM8173835__0","GSM8173835","0","Endocardial cell","GSE262689","Injured","3dpi",694
+"GSM8173835__1","GSM8173835","1","Immature erythroid progenitor (low-confidence)","GSE262689","Injured","3dpi",356
+"GSM8173835__10","GSM8173835","10","T cells / lymphocytes","GSE262689","Injured","3dpi",219
+"GSM8173835__11","GSM8173835","11","Thrombocytes","GSE262689","Injured","3dpi",110
+"GSM8173835__12","GSM8173835","12","Vascular endothelial cells","GSE262689","Injured","3dpi",13
+"GSM8173835__13","GSM8173835","13","Erythroid cells","GSE262689","Injured","3dpi",108
+"GSM8173835__14","GSM8173835","14","Vascular endothelial cells (fenestrated)","GSE262689","Injured","3dpi",15
+"GSM8173835__16","GSM8173835","16","Proliferating / cycling cells (lineage-nonspecific)","GSE262689","Injured","3dpi",192
+"GSM8173835__18","GSM8173835","18","Neutrophils","GSE262689","Injured","3dpi",11
+"GSM8173835__19","GSM8173835","19","Fibroblasts","GSE262689","Injured","3dpi",10
+"GSM8173835__2","GSM8173835","2","Cardiomyocytes","GSE262689","Injured","3dpi",150
+"GSM8173835__3","GSM8173835","3","Epicardial cells","GSE262689","Injured","3dpi",111
+"GSM8173835__4","GSM8173835","4","Erythroid-thrombocyte progenitor (mixed blood lineage)","GSE262689","Injured","3dpi",31
+"GSM8173835__5","GSM8173835","5","Cardiomyocytes (ventricular/sarcomeric)","GSE262689","Injured","3dpi",493
+"GSM8173835__6","GSM8173835","6","Macrophages","GSE262689","Injured","3dpi",69
+"GSM8173836__0","GSM8173836","0","Endocardial cell","GSE262689","Injured","3dpi",561
+"GSM8173836__1","GSM8173836","1","Immature erythroid progenitor (low-confidence)","GSE262689","Injured","3dpi",778
+"GSM8173836__10","GSM8173836","10","T cells / lymphocytes","GSE262689","Injured","3dpi",52
+"GSM8173836__11","GSM8173836","11","Thrombocytes","GSE262689","Injured","3dpi",109
+"GSM8173836__14","GSM8173836","14","Vascular endothelial cells (fenestrated)","GSE262689","Injured","3dpi",32
+"GSM8173836__15","GSM8173836","15","Erythroid cells","GSE262689","Injured","3dpi",167
+"GSM8173836__16","GSM8173836","16","Proliferating / cycling cells (lineage-nonspecific)","GSE262689","Injured","3dpi",54
+"GSM8173836__17","GSM8173836","17","Erythroid-thrombocyte progenitor (mixed blood lineage, low n)","GSE262689","Injured","3dpi",41
+"GSM8173836__2","GSM8173836","2","Cardiomyocytes","GSE262689","Injured","3dpi",167
+"GSM8173836__20","GSM8173836","20","Erythroid-thrombocyte progenitor (mixed blood lineage, weak/low-confidence)","GSE262689","Injured","3dpi",62
+"GSM8173836__3","GSM8173836","3","Epicardial cells","GSE262689","Injured","3dpi",156
+"GSM8173836__4","GSM8173836","4","Erythroid-thrombocyte progenitor (mixed blood lineage)","GSE262689","Injured","3dpi",345
+"GSM8173836__5","GSM8173836","5","Cardiomyocytes (ventricular/sarcomeric)","GSE262689","Injured","3dpi",133
+"GSM8173836__6","GSM8173836","6","Macrophages","GSE262689","Injured","3dpi",50
+"GSM8173836__8","GSM8173836","8","Endocardial cell","GSE262689","Injured","3dpi",80
+"GSM8173837__0","GSM8173837","0","Endocardial cell","GSE262689","Injured","3dpi",99
+"GSM8173837__1","GSM8173837","1","Immature erythroid progenitor (low-confidence)","GSE262689","Injured","3dpi",635
+"GSM8173837__10","GSM8173837","10","T cells / lymphocytes","GSE262689","Injured","3dpi",53
+"GSM8173837__11","GSM8173837","11","Thrombocytes","GSE262689","Injured","3dpi",141
+"GSM8173837__15","GSM8173837","15","Erythroid cells","GSE262689","Injured","3dpi",368
+"GSM8173837__16","GSM8173837","16","Proliferating / cycling cells (lineage-nonspecific)","GSE262689","Injured","3dpi",88
+"GSM8173837__17","GSM8173837","17","Erythroid-thrombocyte progenitor (mixed blood lineage, low n)","GSE262689","Injured","3dpi",183
+"GSM8173837__2","GSM8173837","2","Cardiomyocytes","GSE262689","Injured","3dpi",59
+"GSM8173837__20","GSM8173837","20","Erythroid-thrombocyte progenitor (mixed blood lineage, weak/low-confidence)","GSE262689","Injured","3dpi",187
+"GSM8173837__3","GSM8173837","3","Epicardial cells","GSE262689","Injured","3dpi",135
+"GSM8173837__4","GSM8173837","4","Erythroid-thrombocyte progenitor (mixed blood lineage)","GSE262689","Injured","3dpi",678
+"GSM8173837__5","GSM8173837","5","Cardiomyocytes (ventricular/sarcomeric)","GSE262689","Injured","3dpi",89
+"GSM8173837__6","GSM8173837","6","Macrophages","GSE262689","Injured","3dpi",95
+"GSM8173837__8","GSM8173837","8","Endocardial cell","GSE262689","Injured","3dpi",12
+"GSM8173838__0","GSM8173838","0","Endocardial cell","GSE262689","Injured","14dpi",401
+"GSM8173838__1","GSM8173838","1","Immature erythroid progenitor (low-confidence)","GSE262689","Injured","14dpi",214
+"GSM8173838__10","GSM8173838","10","T cells / lymphocytes","GSE262689","Injured","14dpi",279
+"GSM8173838__11","GSM8173838","11","Thrombocytes","GSE262689","Injured","14dpi",364
+"GSM8173838__13","GSM8173838","13","Erythroid cells","GSE262689","Injured","14dpi",55
+"GSM8173838__14","GSM8173838","14","Vascular endothelial cells (fenestrated)","GSE262689","Injured","14dpi",118
+"GSM8173838__16","GSM8173838","16","Proliferating / cycling cells (lineage-nonspecific)","GSE262689","Injured","14dpi",28
+"GSM8173838__18","GSM8173838","18","Neutrophils","GSE262689","Injured","14dpi",248
+"GSM8173838__2","GSM8173838","2","Cardiomyocytes","GSE262689","Injured","14dpi",277
+"GSM8173838__21","GSM8173838","21","Perivascular cell / pericyte","GSE262689","Injured","14dpi",58
+"GSM8173838__22","GSM8173838","22","Epicardial cell","GSE262689","Injured","14dpi",18
+"GSM8173838__3","GSM8173838","3","Epicardial cells","GSE262689","Injured","14dpi",340
+"GSM8173838__4","GSM8173838","4","Erythroid-thrombocyte progenitor (mixed blood lineage)","GSE262689","Injured","14dpi",10
+"GSM8173838__5","GSM8173838","5","Cardiomyocytes (ventricular/sarcomeric)","GSE262689","Injured","14dpi",112
+"GSM8173838__6","GSM8173838","6","Macrophages","GSE262689","Injured","14dpi",231
+"GSM8173839__0","GSM8173839","0","Endocardial cell","GSE262689","Injured","14dpi",1270
+"GSM8173839__1","GSM8173839","1","Immature erythroid progenitor (low-confidence)","GSE262689","Injured","14dpi",491
+"GSM8173839__10","GSM8173839","10","T cells / lymphocytes","GSE262689","Injured","14dpi",70
+"GSM8173839__11","GSM8173839","11","Thrombocytes","GSE262689","Injured","14dpi",191
+"GSM8173839__12","GSM8173839","12","Vascular endothelial cells","GSE262689","Injured","14dpi",24
+"GSM8173839__13","GSM8173839","13","Erythroid cells","GSE262689","Injured","14dpi",247
+"GSM8173839__14","GSM8173839","14","Vascular endothelial cells (fenestrated)","GSE262689","Injured","14dpi",121
+"GSM8173839__16","GSM8173839","16","Proliferating / cycling cells (lineage-nonspecific)","GSE262689","Injured","14dpi",29
+"GSM8173839__18","GSM8173839","18","Neutrophils","GSE262689","Injured","14dpi",13
+"GSM8173839__19","GSM8173839","19","Fibroblasts","GSE262689","Injured","14dpi",14
+"GSM8173839__2","GSM8173839","2","Cardiomyocytes","GSE262689","Injured","14dpi",653
+"GSM8173839__21","GSM8173839","21","Perivascular cell / pericyte","GSE262689","Injured","14dpi",62
+"GSM8173839__22","GSM8173839","22","Epicardial cell","GSE262689","Injured","14dpi",24
+"GSM8173839__3","GSM8173839","3","Epicardial cells","GSE262689","Injured","14dpi",549
+"GSM8173839__4","GSM8173839","4","Erythroid-thrombocyte progenitor (mixed blood lineage)","GSE262689","Injured","14dpi",114
+"GSM8173839__5","GSM8173839","5","Cardiomyocytes (ventricular/sarcomeric)","GSE262689","Injured","14dpi",515
+"GSM8173839__6","GSM8173839","6","Macrophages","GSE262689","Injured","14dpi",164
+"GSM8173839__8","GSM8173839","8","Endocardial cell","GSE262689","Injured","14dpi",12
+"GSM8173840__0","GSM8173840","0","Endocardial cell","GSE262689","Injured","14dpi",1621
+"GSM8173840__1","GSM8173840","1","Immature erythroid progenitor (low-confidence)","GSE262689","Injured","14dpi",697
+"GSM8173840__10","GSM8173840","10","T cells / lymphocytes","GSE262689","Injured","14dpi",103
+"GSM8173840__11","GSM8173840","11","Thrombocytes","GSE262689","Injured","14dpi",134
+"GSM8173840__12","GSM8173840","12","Vascular endothelial cells","GSE262689","Injured","14dpi",26
+"GSM8173840__13","GSM8173840","13","Erythroid cells","GSE262689","Injured","14dpi",248
+"GSM8173840__14","GSM8173840","14","Vascular endothelial cells (fenestrated)","GSE262689","Injured","14dpi",108
+"GSM8173840__16","GSM8173840","16","Proliferating / cycling cells (lineage-nonspecific)","GSE262689","Injured","14dpi",30
+"GSM8173840__18","GSM8173840","18","Neutrophils","GSE262689","Injured","14dpi",127
+"GSM8173840__19","GSM8173840","19","Fibroblasts","GSE262689","Injured","14dpi",12
+"GSM8173840__2","GSM8173840","2","Cardiomyocytes","GSE262689","Injured","14dpi",377
+"GSM8173840__20","GSM8173840","20","Erythroid-thrombocyte progenitor (mixed blood lineage, weak/low-confidence)","GSE262689","Injured","14dpi",11
+"GSM8173840__21","GSM8173840","21","Perivascular cell / pericyte","GSE262689","Injured","14dpi",53
+"GSM8173840__22","GSM8173840","22","Epicardial cell","GSE262689","Injured","14dpi",29
+"GSM8173840__3","GSM8173840","3","Epicardial cells","GSE262689","Injured","14dpi",500
+"GSM8173840__4","GSM8173840","4","Erythroid-thrombocyte progenitor (mixed blood lineage)","GSE262689","Injured","14dpi",80
+"GSM8173840__5","GSM8173840","5","Cardiomyocytes (ventricular/sarcomeric)","GSE262689","Injured","14dpi",602
+"GSM8173840__6","GSM8173840","6","Macrophages","GSE262689","Injured","14dpi",168
+"GSM8173840__8","GSM8173840","8","Endocardial cell","GSE262689","Injured","14dpi",12
+"GSM8173841__0","GSM8173841","0","Endocardial cell","GSE262689","Injured","14dpi",1508
+"GSM8173841__1","GSM8173841","1","Immature erythroid progenitor (low-confidence)","GSE262689","Injured","14dpi",677
+"GSM8173841__10","GSM8173841","10","T cells / lymphocytes","GSE262689","Injured","14dpi",128
+"GSM8173841__11","GSM8173841","11","Thrombocytes","GSE262689","Injured","14dpi",480
+"GSM8173841__12","GSM8173841","12","Vascular endothelial cells","GSE262689","Injured","14dpi",66
+"GSM8173841__13","GSM8173841","13","Erythroid cells","GSE262689","Injured","14dpi",95
+"GSM8173841__14","GSM8173841","14","Vascular endothelial cells (fenestrated)","GSE262689","Injured","14dpi",32
+"GSM8173841__16","GSM8173841","16","Proliferating / cycling cells (lineage-nonspecific)","GSE262689","Injured","14dpi",69
+"GSM8173841__19","GSM8173841","19","Fibroblasts","GSE262689","Injured","14dpi",31
+"GSM8173841__2","GSM8173841","2","Cardiomyocytes","GSE262689","Injured","14dpi",495
+"GSM8173841__20","GSM8173841","20","Erythroid-thrombocyte progenitor (mixed blood lineage, weak/low-confidence)","GSE262689","Injured","14dpi",15
+"GSM8173841__21","GSM8173841","21","Perivascular cell / pericyte","GSE262689","Injured","14dpi",15
+"GSM8173841__22","GSM8173841","22","Epicardial cell","GSE262689","Injured","14dpi",17
+"GSM8173841__3","GSM8173841","3","Epicardial cells","GSE262689","Injured","14dpi",534
+"GSM8173841__4","GSM8173841","4","Erythroid-thrombocyte progenitor (mixed blood lineage)","GSE262689","Injured","14dpi",60
+"GSM8173841__5","GSM8173841","5","Cardiomyocytes (ventricular/sarcomeric)","GSE262689","Injured","14dpi",854
+"GSM8173841__6","GSM8173841","6","Macrophages","GSE262689","Injured","14dpi",216
+"GSM8173841__9","GSM8173841","9","Smooth muscle cell / pericyte","GSE262689","Injured","14dpi",13
+"GSM8173842__0","GSM8173842","0","Endocardial cell","GSE262689","Injured","14dpi",990
+"GSM8173842__1","GSM8173842","1","Immature erythroid progenitor (low-confidence)","GSE262689","Injured","14dpi",356
+"GSM8173842__10","GSM8173842","10","T cells / lymphocytes","GSE262689","Injured","14dpi",42
+"GSM8173842__11","GSM8173842","11","Thrombocytes","GSE262689","Injured","14dpi",200
+"GSM8173842__14","GSM8173842","14","Vascular endothelial cells (fenestrated)","GSE262689","Injured","14dpi",35
+"GSM8173842__16","GSM8173842","16","Proliferating / cycling cells (lineage-nonspecific)","GSE262689","Injured","14dpi",54
+"GSM8173842__2","GSM8173842","2","Cardiomyocytes","GSE262689","Injured","14dpi",264
+"GSM8173842__21","GSM8173842","21","Perivascular cell / pericyte","GSE262689","Injured","14dpi",25
+"GSM8173842__25","GSM8173842","25","Lymphatic endothelial cells","GSE262689","Injured","14dpi",15
+"GSM8173842__3","GSM8173842","3","Epicardial cells","GSE262689","Injured","14dpi",413
+"GSM8173842__4","GSM8173842","4","Erythroid-thrombocyte progenitor (mixed blood lineage)","GSE262689","Injured","14dpi",42
+"GSM8173842__5","GSM8173842","5","Cardiomyocytes (ventricular/sarcomeric)","GSE262689","Injured","14dpi",223
+"GSM8173842__6","GSM8173842","6","Macrophages","GSE262689","Injured","14dpi",103
+"GSM8173842__8","GSM8173842","8","Endocardial cell","GSE262689","Injured","14dpi",40
+"GSM8173843__0","GSM8173843","0","Endocardial cell","GSE262689","Injured","14dpi",298
+"GSM8173843__1","GSM8173843","1","Immature erythroid progenitor (low-confidence)","GSE262689","Injured","14dpi",620
+"GSM8173843__11","GSM8173843","11","Thrombocytes","GSE262689","Injured","14dpi",92
+"GSM8173843__14","GSM8173843","14","Vascular endothelial cells (fenestrated)","GSE262689","Injured","14dpi",13
+"GSM8173843__15","GSM8173843","15","Erythroid cells","GSE262689","Injured","14dpi",55
+"GSM8173843__2","GSM8173843","2","Cardiomyocytes","GSE262689","Injured","14dpi",151
+"GSM8173843__3","GSM8173843","3","Epicardial cells","GSE262689","Injured","14dpi",46
+"GSM8173843__4","GSM8173843","4","Erythroid-thrombocyte progenitor (mixed blood lineage)","GSE262689","Injured","14dpi",18
+"GSM8173843__5","GSM8173843","5","Cardiomyocytes (ventricular/sarcomeric)","GSE262689","Injured","14dpi",20
+"GSM8173843__6","GSM8173843","6","Macrophages","GSE262689","Injured","14dpi",14
