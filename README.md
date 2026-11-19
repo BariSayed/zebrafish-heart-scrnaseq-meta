@@ -18,7 +18,7 @@ post-injury; **77,375 cells, 26 clusters** after SCT/rPCA integration).
 03_processed_data/
    qc/                    per-sample QC summaries, before & after filtering
    clustering/            full cell metadata, 26-cluster annotation, marker tables
-   differential_expression/  pseudobulk counts + DESeq2 FINAL (+ intermediate/)
+   differential_expression/  pseudobulk counts + DESeq2 results (+ intermediate/)
    enrichment/            GO-BP & KEGG per-cluster (UP/DOWN)
    pseudotime/            Monocle3 pseudotime value tables (per cell type)
 05_figures/               main/ (Figure_1..8) + pseudotime/ panels
