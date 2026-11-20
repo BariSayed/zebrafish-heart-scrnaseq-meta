@@ -58,7 +58,7 @@ citation and persistence: **DOI [10.5281/zenodo.24376110](https://doi.org/10.528
   glmGamPoi (integration, clustering, markers, Figures 2 & 4).
 - **metaseq** — R 4.4.3; DESeq2 1.46.0, clusterProfiler 4.14.0,
   org.Dr.eg.db 3.20.0, AnnotationDbi 1.68.0 (pseudobulk DE, enrichment).
-- **system R** 4.5.1 + Monocle3 (pseudotime, Figures 7A/7B).
+- **Monocle3** 1.4.27 for pseudotime (Figures 7A/7B), installed in the scrna env; full versions in `environment.txt`.
 - **ComplexHeatmap** 2.26.1 + circlize (Figure 5 composition heatmap).
 - **Python 3** + matplotlib/pandas for the composite figure scripts
   (Figures 3, 6B, 7C, 8).
