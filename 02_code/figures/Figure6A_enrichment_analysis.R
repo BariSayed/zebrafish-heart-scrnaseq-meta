@@ -2,13 +2,13 @@
 # Figure 6A | GO-BP & KEGG enrichment per cluster (clusterProfiler) + per-cluster dotplots
 # Zebrafish heart-injury scRNA-seq meta-analysis
 #
-# INPUT(S):  pseudobulk_DESeq2_results_PRIMARY.csv
+# INPUT(S):  pseudobulk_DESeq2_results_primary.csv
 # OUTPUT:    GO_BP/KEGG_enrichment_{UP,DOWN}_per_cluster.csv + per-cluster dotplot PNGs
 # NOTE: Produces the enrichment tables that Figure6B curates into the 4-panel figure.
 # ============================================================================
 # =====================================================================================
 # STEP 9: GO (Biological Process) and KEGG pathway enrichment, PER CELL TYPE / CLUSTER
-# Input: pseudobulk_DESeq2_results_PRIMARY.csv (mt-/rps-rpl genes already excluded, Step
+# Input: pseudobulk_DESeq2_results_primary.csv (mt-/rps-rpl genes already excluded, Step
 #        8 pseudobulk DESeq2 output). Up/down gene sets built separately per cluster
 #        (padj < 0.05), using a SHARED detected-gene universe (all genes tested by DESeq2
 #        in at least one cluster) converted to Entrez IDs via org.Dr.eg.db. No hand-
@@ -22,7 +22,7 @@ suppressPackageStartupMessages({
 })
 
 setwd("~/zebrafish/results")
-de <- read.csv("pseudobulk_DESeq2_results_PRIMARY.csv", stringsAsFactors = FALSE)
+de <- read.csv("pseudobulk_DESeq2_results_primary.csv", stringsAsFactors = FALSE)
 cat("Loaded PRIMARY DE table:", nrow(de), "rows,", length(unique(de$gene)), "unique genes,",
     length(unique(de$cluster_id)), "clusters\n")
 

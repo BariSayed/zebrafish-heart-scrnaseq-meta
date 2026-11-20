@@ -14,7 +14,7 @@ cat("\nSaved pseudobulk_DESeq2_results.csv with gene_class and exclude_from_prim
 
 # Also save a "primary" (clean) subset for GO/KEGG universe + headline tables
 de_primary <- de[!de$exclude_from_primary, ]
-write.csv(de_primary, "~/zebrafish/results/pseudobulk_DESeq2_results_PRIMARY.csv", row.names = FALSE)
-cat("Saved pseudobulk_DESeq2_results_PRIMARY.csv (mt-/rps/rpl excluded),", nrow(de_primary), "rows\n")
+write.csv(de_primary, "~/zebrafish/results/pseudobulk_DESeq2_results_primary.csv", row.names = FALSE)
+cat("Saved pseudobulk_DESeq2_results_primary.csv (mt-/rps/rpl excluded),", nrow(de_primary), "rows\n")
 
 cat("\nFLAG_DONE\n")

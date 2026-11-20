@@ -40,7 +40,7 @@ Figure6A ──► GO/KEGG_*_per_cluster.csv ─► Figure6B (Fig 6)
 - Figs 3A/3B: `umap_full_export.csv(.gz)` + `new_cluster_annotation.csv`.
 - Figs 7C/8: the five `*_pseudotime_values.csv` from 7A/7B.
 - Fig 6B: `GO_BP/KEGG_enrichment_{UP,DOWN}_per_cluster.csv` from 6A.
-- Fig 6A: `pseudobulk_DESeq2_results_PRIMARY.csv`.
+- Fig 6A: `pseudobulk_DESeq2_results_primary.csv`.
 - Fig 5: `comp_matrix_for_heatmap.csv` + `heatmap_col_annotation.csv`
   (built from `full_metadata_reclustered.csv`).
 
