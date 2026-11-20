@@ -9,6 +9,7 @@ post-injury; **77,375 cells, 26 clusters** after SCT/rPCA integration).
 ## What is in this repository
 ```
 00_metadata/              sample sheet (22 samples: GSM, GSE, dpi, condition)
+01_raw_data/              (not included here - raw 10x matrices; download from GEO. See folder README)
 02_code/
    01_integration/        SCT integration (rPCA) + reclustering
    02_annotation/         cluster markers, metadata export, composition
@@ -21,6 +22,7 @@ post-injury; **77,375 cells, 26 clusters** after SCT/rPCA integration).
    differential_expression/  pseudobulk counts + DESeq2 results (+ intermediate/)
    enrichment/            GO-BP & KEGG per-cluster (UP/DOWN)
    pseudotime/            Monocle3 pseudotime value tables (per cell type)
+04_seurat_objects/        (not included here - large Seurat .rds; regenerate via 02_code. See folder README)
 05_figures/               main/ (Figure_1..8) + pseudotime/ panels
 06_tables/                manuscript tables (Table 2 QC metrics, Table 3 annotation)
 07_supplementary/         submitted supplementary workbook
