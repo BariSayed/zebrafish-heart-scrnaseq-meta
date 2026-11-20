@@ -1,3 +1,7 @@
+# Run from the repository root; all paths below are repository-relative.
+# NOTE: Seurat .rds objects under 04_seurat_objects/ are not distributed due to size.
+# Regenerate them with the pipeline in 02_code/ (from the GEO raw data in the README),
+# or place your own copy at the path shown before running.
 # =====================================================================================
 # Pseudobulk differential expression: Injured vs Healthy, per cell type, ~Dataset+Condition
 # Built on VERIFIED metadata columns from the original script's metadata tribble:
@@ -15,7 +19,7 @@ suppressPackageStartupMessages({
 })
 
 # ---- 1. Load the reclustered object ----
-obj <- readRDS("~/zebrafish/results/rds/Seurat_Integrated_reclustered.rds")
+obj <- readRDS("04_seurat_objects/Seurat_Integrated_reclustered.rds")
 cat("Loaded object:", ncol(obj), "cells x", nrow(obj), "genes\n")
 cat("Available metadata columns:\n")
 print(colnames(obj@meta.data))
@@ -38,7 +42,7 @@ cluster_col <- cluster_col_candidates[1]  # EDIT if the wrong one is picked -- c
 cat("Using cluster column:", cluster_col, "\n")
 
 # Attach the cell-type labels from new_cluster_annotation.csv (must be uploaded alongside this script)
-annot <- read.csv("new_cluster_annotation.csv")
+annot <- read.csv("03_processed_data/clustering/new_cluster_annotation.csv")
 cluster_to_celltype <- setNames(annot$final_cell_type, as.character(annot$new_cluster))
 
 obj$cluster_id <- as.character(obj@meta.data[[cluster_col]])
@@ -84,7 +88,7 @@ pb_counts <- do.call(cbind, pb_list)
 pb_meta <- do.call(rbind, pb_meta_list)
 rownames(pb_meta) <- pb_meta$pseudo_group
 
-write.csv(pb_meta, "pseudobulk_sample_metadata.csv", row.names = FALSE)
+write.csv(pb_meta, "03_processed_data/differential_expression/pseudobulk_sample_metadata.csv", row.names = FALSE)
 cat("Saved pseudobulk_sample_metadata.csv (", nrow(pb_meta), "pseudo-samples)\n")
 
 # ---- 5. Run DESeq2 PER CELL TYPE (cluster), design ~ Dataset + Condition ----
@@ -145,5 +149,5 @@ for (cl in clusters_present) {
 }
 
 final_results <- do.call(rbind, all_results)
-write.csv(final_results, "pseudobulk_DESeq2_results_all_clusters.csv", row.names = FALSE)
+write.csv(final_results, "03_processed_data/differential_expression/intermediate/pseudobulk_DESeq2_results_all_clusters.csv", row.names = FALSE)
 cat("\n=== FINAL: saved pseudobulk_DESeq2_results_all_clusters.csv,", nrow(final_results), "gene x cluster rows across", length(all_results), "clusters tested ===\n")

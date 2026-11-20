@@ -1,5 +1,9 @@
+# Run from the repository root; all paths below are repository-relative.
+# NOTE: Seurat .rds objects under 04_seurat_objects/ are not distributed due to size.
+# Regenerate them with the pipeline in 02_code/ (from the GEO raw data in the README),
+# or place your own copy at the path shown before running.
 library(Seurat)
-o <- readRDS("~/zebrafish/results/rds/Seurat_Integrated_SCT_with_UMAP_Clusters.rds")
+o <- readRDS("04_seurat_objects/Seurat_Integrated_SCT_with_UMAP_Clusters.rds")
 sink("~/inspect_out.txt")
 cat("assays:", names(o@assays), "\n")
 cat("DefaultAssay:", DefaultAssay(o), "\n")

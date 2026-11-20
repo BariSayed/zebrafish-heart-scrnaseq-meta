@@ -1,9 +1,13 @@
+# Run from the repository root; all paths below are repository-relative.
+# NOTE: Seurat .rds objects under 04_seurat_objects/ are not distributed due to size.
+# Regenerate them with the pipeline in 02_code/ (from the GEO raw data in the README),
+# or place your own copy at the path shown before running.
 suppressPackageStartupMessages({
   library(Seurat)
   library(Matrix)
 })
 
-obj <- readRDS("~/zebrafish/results/rds/Seurat_Integrated_reclustered.rds")
+obj <- readRDS("04_seurat_objects/Seurat_Integrated_reclustered.rds")
 cat("Loaded object:", ncol(obj), "cells x", nrow(obj), "genes\n")
 cat("Available metadata columns:\n"); print(colnames(obj@meta.data))
 
@@ -24,7 +28,7 @@ if (n_levels != 26) {
        ". Do not proceed -- re-verify which column holds the integrated-assay solution.")
 }
 
-annot <- read.csv("new_cluster_annotation.csv")
+annot <- read.csv("03_processed_data/clustering/new_cluster_annotation.csv")
 cluster_to_celltype <- setNames(annot$final_cell_type, as.character(annot$new_cluster))
 
 obj$cluster_id <- as.character(obj@meta.data[[cluster_col]])
@@ -63,7 +67,7 @@ pb_counts <- do.call(cbind, pb_list)
 pb_meta <- do.call(rbind, pb_meta_list)
 rownames(pb_meta) <- pb_meta$pseudo_group
 
-write.csv(as.data.frame(as.matrix(pb_counts)), "pseudobulk_counts_matrix.csv", row.names = TRUE)
-write.csv(pb_meta, "pseudobulk_sample_metadata.csv", row.names = FALSE)
+write.csv(as.data.frame(as.matrix(pb_counts)), "03_processed_data/differential_expression/pseudobulk_counts_matrix.csv", row.names = TRUE)
+write.csv(pb_meta, "03_processed_data/differential_expression/pseudobulk_sample_metadata.csv", row.names = FALSE)
 cat("STAGE1_DONE: saved pseudobulk_counts_matrix.csv (", nrow(pb_counts), "genes x", ncol(pb_counts),
     "pseudo-samples) and pseudobulk_sample_metadata.csv (", nrow(pb_meta), "rows)\n")

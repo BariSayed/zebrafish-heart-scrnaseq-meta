@@ -1,5 +1,6 @@
+# Run from the repository root; all paths below are repository-relative.
 # Build final flagged DESeq2 results table: mt-/rps/rpl genes flagged (not deleted) for transparency.
-de <- read.csv("~/zebrafish/results/pseudobulk_DESeq2_results_all_clusters.csv", stringsAsFactors = FALSE)
+de <- read.csv("03_processed_data/differential_expression/intermediate/pseudobulk_DESeq2_results_all_clusters.csv", stringsAsFactors = FALSE)
 
 de$gene_class <- ifelse(grepl("^mt-", de$gene, ignore.case = TRUE), "mitochondrial",
                   ifelse(grepl("^rps|^rpl", de$gene, ignore.case = TRUE), "ribosomal_protein",
@@ -9,12 +10,12 @@ de$exclude_from_primary <- de$gene_class %in% c("mitochondrial", "ribosomal_prot
 cat("Gene class breakdown (rows, all clusters combined):\n")
 print(table(de$gene_class))
 
-write.csv(de, "~/zebrafish/results/pseudobulk_DESeq2_results.csv", row.names = FALSE)
+write.csv(de, "03_processed_data/differential_expression/pseudobulk_DESeq2_results.csv", row.names = FALSE)
 cat("\nSaved pseudobulk_DESeq2_results.csv with gene_class and exclude_from_primary columns,", nrow(de), "rows\n")
 
 # Also save a "primary" (clean) subset for GO/KEGG universe + headline tables
 de_primary <- de[!de$exclude_from_primary, ]
-write.csv(de_primary, "~/zebrafish/results/pseudobulk_DESeq2_results_primary.csv", row.names = FALSE)
+write.csv(de_primary, "03_processed_data/differential_expression/intermediate/pseudobulk_DESeq2_results_primary.csv", row.names = FALSE)
 cat("Saved pseudobulk_DESeq2_results_primary.csv (mt-/rps/rpl excluded),", nrow(de_primary), "rows\n")
 
 cat("\nFLAG_DONE\n")

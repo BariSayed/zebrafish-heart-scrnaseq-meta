@@ -1,5 +1,6 @@
+# Run from the repository root; all paths below are repository-relative.
 # Verification checks on pseudobulk_DESeq2_results_all_clusters.csv
-df <- read.csv("~/zebrafish/results/pseudobulk_DESeq2_results_all_clusters.csv", stringsAsFactors = FALSE)
+df <- read.csv("03_processed_data/differential_expression/intermediate/pseudobulk_DESeq2_results_all_clusters.csv", stringsAsFactors = FALSE)
 cat("Total rows:", nrow(df), "\n")
 cat("Columns:", paste(colnames(df), collapse=", "), "\n\n")
 

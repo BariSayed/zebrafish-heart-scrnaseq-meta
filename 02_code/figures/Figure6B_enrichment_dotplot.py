@@ -1,3 +1,4 @@
+# Run from the repository root; all paths below are repository-relative.
 # ============================================================================
 # Figure 6B | Curated GO/KEGG dot-plot, 4 panels (GO-up, KEGG-up, GO-down, KEGG-down)
 # Zebrafish heart-injury scRNA-seq meta-analysis
@@ -9,13 +10,17 @@
 
 # ===== PART 1: data + curated term lists =====
 import pandas as pd, numpy as np, matplotlib.pyplot as plt
-apply_figure_style()
+try:
+    from figure_style import apply_figure_style
+    apply_figure_style()
+except Exception:
+    pass
 
 # reload corrected CSVs (cluster-12 fixed versions)
-go_up = pd.read_csv(host.artifact_path("964c8697-203d-4ec4-9688-763b91fc707c"))
-go_dn = pd.read_csv(host.artifact_path("8840618c-7c21-41f9-bc36-50da60243816"))
-kg_up = pd.read_csv(host.artifact_path("84e6e8fe-8f78-4085-8e02-e45986118cdd"))
-kg_dn = pd.read_csv(host.artifact_path("28661ff2-d1d2-46f3-ba77-ad06a076e297"))
+go_up = pd.read_csv("03_processed_data/enrichment/GO_BP_enrichment_UP_per_cluster.csv")
+go_dn = pd.read_csv("03_processed_data/enrichment/GO_BP_enrichment_DOWN_per_cluster.csv")
+kg_up = pd.read_csv("03_processed_data/enrichment/KEGG_enrichment_UP_per_cluster.csv")
+kg_dn = pd.read_csv("03_processed_data/enrichment/KEGG_enrichment_DOWN_per_cluster.csv")
 
 col_order = [("2","Cardiomyocyte"),("5","Cardiomyocyte (vent.)"),("0","Endocardial"),("8","Endocardial"),
     ("3","Epicardial"),("22","Epicardial"),("19","Fibroblast"),("21","Perivascular"),("14","Vascular endo."),
@@ -88,6 +93,6 @@ for cv in [3,10,20]:
     axes[0,1].scatter([],[],s=cv*20,c='grey',edgecolors='black',linewidths=0.4,label=str(cv))
 axes[0,1].legend(title="genes",loc='upper left',bbox_to_anchor=(1.12,1.0),frameon=False,fontsize=7,title_fontsize=7.5,labelspacing=1.1)
 fig.subplots_adjust(left=0.13,right=0.93,top=0.95,bottom=0.17,wspace=0.75,hspace=0.6)
-fig.savefig("Figure_6.png",dpi=300,bbox_inches='tight')
+fig.savefig("05_figures/main/Figure_6.png",dpi=300,bbox_inches='tight')
 plt.close(fig)
 print("saved")

@@ -1,3 +1,4 @@
+# Run from the repository root; all paths below are repository-relative.
 # ============================================================================
 # Figure 3B | UMAP split Healthy vs Injured, 8 major cell types (others greyed)
 # Zebrafish heart-injury scRNA-seq meta-analysis
@@ -7,6 +8,13 @@
 # NOTE: Lower section of the final Figure 4 (assembled with Figure3A).
 # ============================================================================
 # Use the 8 major interpretable cell types as in old Figure 4 (not all 26 clusters - too busy for a split panel)
+import pandas as pd, numpy as np
+import matplotlib.pyplot as plt
+# load UMAP export + annotate cell_type so this script runs standalone (same as Figure3A)
+df  = pd.read_csv("03_processed_data/clustering/umap_full_export.csv.gz", compression="gzip")
+ann = pd.read_csv("03_processed_data/clustering/new_cluster_annotation.csv")
+df["cell_type"] = df["cluster"].map(dict(zip(ann["new_cluster"], ann["final_cell_type"])))
+
 major_map = {
     "Endocardial cell":"Endocardial cell", "Endocardial cell (frzb+)":"Endocardial cell",
     "Cardiomyocytes":"Cardiomyocytes", "Cardiomyocytes (ventricular/sarcomeric)":"Cardiomyocytes",
@@ -41,6 +49,6 @@ handles.append(plt.Line2D([0],[0], marker='o', color='w', markerfacecolor='#cccc
 axes[1].legend(handles=handles, loc='upper left', bbox_to_anchor=(1.02,1.0), frameon=False, fontsize=9)
 fig.suptitle("Major cell-type distribution: Healthy vs Injured", fontsize=13, y=1.02)
 fig.subplots_adjust(wspace=0.05)
-fig.savefig("Figure_3B.png", dpi=300, bbox_inches='tight')
+fig.savefig("05_figures/main/Figure_3B.png", dpi=300, bbox_inches='tight')
 plt.close(fig)
 print("saved; n major-typed cells:", df['major_type'].notna().sum(), "/ 77375")

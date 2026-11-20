@@ -1,5 +1,6 @@
+# Run from the repository root; all paths below are repository-relative.
 # Confound check: percent.mt / percent.ribo by Condition & Dataset (from lightweight CSV, no RDS reload)
-meta <- read.csv("~/zebrafish/results/full_metadata_reclustered.csv", stringsAsFactors = FALSE)
+meta <- read.csv("03_processed_data/clustering/full_metadata_reclustered.csv", stringsAsFactors = FALSE)
 cat("Metadata rows:", nrow(meta), "\n")
 cat("Columns:", paste(colnames(meta), collapse=", "), "\n\n")
 
@@ -13,7 +14,7 @@ if (all(c("percent.mt","percent.ribo","Condition","Dataset") %in% colnames(meta)
 }
 
 # Check DESeq2 results for mt-/rps/rpl gene over-representation among significant hits
-de <- read.csv("~/zebrafish/results/pseudobulk_DESeq2_results_all_clusters.csv", stringsAsFactors = FALSE)
+de <- read.csv("03_processed_data/differential_expression/intermediate/pseudobulk_DESeq2_results_all_clusters.csv", stringsAsFactors = FALSE)
 is_mt  <- grepl("^mt-", de$gene, ignore.case = TRUE)
 is_rib <- grepl("^rps|^rpl", de$gene, ignore.case = TRUE)
 cat("\nTotal mt- genes in results (rows, all clusters combined):", sum(is_mt), "\n")

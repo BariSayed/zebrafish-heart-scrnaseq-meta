@@ -1,3 +1,7 @@
+# Run from the repository root; all paths below are repository-relative.
+# NOTE: Seurat .rds objects under 04_seurat_objects/ are not distributed due to size.
+# Regenerate them with the pipeline in 02_code/ (from the GEO raw data in the README),
+# or place your own copy at the path shown before running.
 #!/usr/bin/env Rscript
 
 # ---- Load libraries ----
@@ -9,7 +13,7 @@ suppressPackageStartupMessages({
 message("🚀 Starting SCT normalization and integration ...")
 
 # ---- Load filtered Seurat list ----
-filtered_list <- readRDS("~/zebrafish/results/rds/Seurat_List_QC_filter.rds")
+filtered_list <- readRDS("04_seurat_objects/Seurat_List_QC_filter.rds")
 message("✅ Loaded filtered Seurat list: ", length(filtered_list), " samples")
 
 # ---- SCT normalization per sample ----
@@ -53,8 +57,8 @@ seurat_integrated <- IntegrateData(
 message("✅ Integration completed")
 
 # ---- Save output ----
-saveRDS(seurat_integrated, "~/zebrafish/results/rds/Seurat_Integrated_SCT.rds")
-message("💾 Saved integrated object to ~/zebrafish/results/rds/Seurat_Integrated_SCT.rds")
+saveRDS(seurat_integrated, "04_seurat_objects/Seurat_Integrated_SCT.rds")
+message("💾 Saved integrated object to 04_seurat_objects/Seurat_Integrated_SCT.rds")
 
 message("🎉 All done!")
 

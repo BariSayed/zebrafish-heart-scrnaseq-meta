@@ -1,3 +1,4 @@
+# Run from the repository root; all paths below are repository-relative.
 # ============================================================================
 # Figure 3A | Integrated UMAP overview, 6 panels (cluster/cell-type/GSE/dpi/condition + legend)
 # INPUT:  umap_full_export.csv.gz + new_cluster_annotation.csv (cluster->cell_type)
@@ -6,10 +7,14 @@
 # ============================================================================
 import pandas as pd, numpy as np
 import matplotlib.pyplot as plt
-from figure_style import apply_figure_style   # or: load the figure-style skill
+try:
+    from figure_style import apply_figure_style
+except Exception:
+    def apply_figure_style():  # no-op fallback if the figure-style helper is unavailable
+        pass
 # ---- load UMAP export + annotate cell_type ----
-df  = pd.read_csv("umap_full_export.csv.gz", compression='gzip')
-ann = pd.read_csv("new_cluster_annotation.csv")
+df  = pd.read_csv("03_processed_data/clustering/umap_full_export.csv.gz", compression='gzip')
+ann = pd.read_csv("03_processed_data/clustering/new_cluster_annotation.csv")
 df['cell_type'] = df['cluster'].map(dict(zip(ann['new_cluster'], ann['final_cell_type'])))
 assert df['cell_type'].isna().sum()==0, "unmapped clusters"
 # ---- cluster colour map (tab20 + tab20b, 26) ----
@@ -75,6 +80,6 @@ ax.set_title("f   Cell type legend", fontsize=11, loc='left')
 handles = [plt.Line2D([0],[0], marker='o', color='w', markerfacecolor=celltype_color[ct], markersize=7, label=ct) for ct in celltype_order]
 ax.legend(handles=handles, loc='center left', frameon=False, fontsize=6.5, labelspacing=0.6, ncol=1)
 
-fig.savefig("Figure_3A.png", dpi=300, bbox_inches='tight')
+fig.savefig("05_figures/main/Figure_3A.png", dpi=300, bbox_inches='tight')
 plt.close(fig)
 print("saved")

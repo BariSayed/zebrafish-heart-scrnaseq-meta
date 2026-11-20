@@ -1,11 +1,12 @@
+# Run from the repository root; all paths below are repository-relative.
 suppressPackageStartupMessages({
   library(org.Dr.eg.db)
   library(AnnotationDbi)
 })
 
-annot_path  <- "/home/sbau/cluster_annotation_simple.txt"
-marker_path <- "/home/sbau/zebrafish/results/new_cluster_top10_markers.csv"
-out_path    <- "/home/sbau/zebrafish/results/Supplementary_Table_ClusterMarkers_detailed.csv"
+annot_path  <- "00_metadata/cluster_annotation_simple.txt"
+marker_path <- "03_processed_data/clustering/new_cluster_top10_markers.csv"
+out_path    <- "06_tables/Supplementary_Table_ClusterMarkers_detailed.csv"
 
 annot <- read.delim(annot_path, sep = "|", stringsAsFactors = FALSE, check.names = FALSE)
 markers <- read.csv(marker_path, stringsAsFactors = FALSE, check.names = FALSE)

@@ -1,3 +1,4 @@
+# Run from the repository root; all paths below are repository-relative.
 # ============================================================================
 # Figure 6A | GO-BP & KEGG enrichment per cluster (clusterProfiler) + per-cluster dotplots
 # Zebrafish heart-injury scRNA-seq meta-analysis
@@ -21,8 +22,8 @@ suppressPackageStartupMessages({
   library(enrichplot)
 })
 
-setwd("~/zebrafish/results")
-de <- read.csv("pseudobulk_DESeq2_results_primary.csv", stringsAsFactors = FALSE)
+# Run from the repository root; paths below are repository-relative.
+de <- read.csv("03_processed_data/differential_expression/intermediate/pseudobulk_DESeq2_results_primary.csv", stringsAsFactors = FALSE)
 cat("Loaded PRIMARY DE table:", nrow(de), "rows,", length(unique(de$gene)), "unique genes,",
     length(unique(de$cluster_id)), "clusters\n")
 
@@ -83,11 +84,11 @@ go_up <- run_compare(up_list, "GO_UP")
 go_down <- run_compare(down_list, "GO_DOWN")
 
 if (!is.null(go_up)) {
-  write.csv(as.data.frame(go_up), "GO_BP_enrichment_UP_per_cluster.csv", row.names = FALSE)
+  write.csv(as.data.frame(go_up), "03_processed_data/enrichment/GO_BP_enrichment_UP_per_cluster.csv", row.names = FALSE)
   cat("Saved GO_BP_enrichment_UP_per_cluster.csv,", nrow(as.data.frame(go_up)), "rows\n")
 }
 if (!is.null(go_down)) {
-  write.csv(as.data.frame(go_down), "GO_BP_enrichment_DOWN_per_cluster.csv", row.names = FALSE)
+  write.csv(as.data.frame(go_down), "03_processed_data/enrichment/GO_BP_enrichment_DOWN_per_cluster.csv", row.names = FALSE)
   cat("Saved GO_BP_enrichment_DOWN_per_cluster.csv,", nrow(as.data.frame(go_down)), "rows\n")
 }
 
@@ -112,11 +113,11 @@ kegg_up <- run_compare_kegg(up_list, "KEGG_UP")
 kegg_down <- run_compare_kegg(down_list, "KEGG_DOWN")
 
 if (!is.null(kegg_up)) {
-  write.csv(as.data.frame(kegg_up), "KEGG_enrichment_UP_per_cluster.csv", row.names = FALSE)
+  write.csv(as.data.frame(kegg_up), "03_processed_data/enrichment/KEGG_enrichment_UP_per_cluster.csv", row.names = FALSE)
   cat("Saved KEGG_enrichment_UP_per_cluster.csv,", nrow(as.data.frame(kegg_up)), "rows\n")
 }
 if (!is.null(kegg_down)) {
-  write.csv(as.data.frame(kegg_down), "KEGG_enrichment_DOWN_per_cluster.csv", row.names = FALSE)
+  write.csv(as.data.frame(kegg_down), "03_processed_data/enrichment/KEGG_enrichment_DOWN_per_cluster.csv", row.names = FALSE)
   cat("Saved KEGG_enrichment_DOWN_per_cluster.csv,", nrow(as.data.frame(kegg_down)), "rows\n")
 }
 
@@ -133,9 +134,9 @@ save_dotplot <- function(obj, fname, title) {
   }, error = function(e) cat("ERROR plotting", fname, ":", conditionMessage(e), "\n"))
 }
 
-save_dotplot(go_up, "Figure_GO_BP_UP_per_cluster.png", "GO (BP) enrichment - Upregulated genes per cell type")
-save_dotplot(go_down, "Figure_GO_BP_DOWN_per_cluster.png", "GO (BP) enrichment - Downregulated genes per cell type")
-save_dotplot(kegg_up, "Figure_KEGG_UP_per_cluster.png", "KEGG enrichment - Upregulated genes per cell type")
-save_dotplot(kegg_down, "Figure_KEGG_DOWN_per_cluster.png", "KEGG enrichment - Downregulated genes per cell type")
+save_dotplot(go_up, "05_figures/Figure_GO_BP_UP_per_cluster.png", "GO (BP) enrichment - Upregulated genes per cell type")
+save_dotplot(go_down, "05_figures/Figure_GO_BP_DOWN_per_cluster.png", "GO (BP) enrichment - Downregulated genes per cell type")
+save_dotplot(kegg_up, "05_figures/Figure_KEGG_UP_per_cluster.png", "KEGG enrichment - Upregulated genes per cell type")
+save_dotplot(kegg_down, "05_figures/Figure_KEGG_DOWN_per_cluster.png", "KEGG enrichment - Downregulated genes per cell type")
 
 cat("\nSTEP9_DONE\n")

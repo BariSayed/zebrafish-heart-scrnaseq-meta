@@ -1,5 +1,6 @@
+# Run from the repository root; all paths below are repository-relative.
 
-d <- read.csv("/home/sbau/zebrafish/results/full_metadata_reclustered.csv")
+d <- read.csv("03_processed_data/clustering/full_metadata_reclustered.csv")
 cat("total cells:", nrow(d), "\n")
 cat("Condition table:\n"); print(table(d$Condition))
 

@@ -1,3 +1,4 @@
+# Run from the repository root; all paths below are repository-relative.
 # ============================================================================
 # Figure 5 | Cell-type composition heatmap (ComplexHeatmap; Condition/GSE/DPI bars, 26 clusters)
 # Zebrafish heart-injury scRNA-seq meta-analysis
@@ -12,12 +13,12 @@
 # mid/low-abundance clusters stay visible (a few dominant clusters reach ~42%
 # and are drawn at the darkest blue).
 # Run with an R that has ComplexHeatmap + circlize, e.g.:
-#   /home/sbau/anaconda3/envs/gbs_core/bin/Rscript Figure5_composition_heatmap.R
+#   Rscript 02_code/figures/Figure5_composition_heatmap.R
 # ============================================================================
 #!/usr/bin/env Rscript
 suppressPackageStartupMessages({library(ComplexHeatmap); library(circlize); library(grid)})
 
-N   <- "/home/sbau/transcriptomics/single_cell_rnaseq/zebrafish_heart_regeneration"
+N   <- "."
 md  <- read.csv(file.path(N,"03_processed_data/clustering/full_metadata_reclustered.csv"),
                 stringsAsFactors=FALSE, check.names=FALSE)
 cl  <- as.character(md[["integrated_snn_res.0.5"]])
@@ -74,7 +75,7 @@ ht <- Heatmap(mat, name="% of sample", col=col_fun, top_annotation=top_anno,
                             labels_gp=gpar(fontsize=10), legend_height=unit(3,"cm")),
   width=unit(ncol(mat)*0.55,"cm"), height=unit(nrow(mat)*0.55,"cm"))
 
-png("Figure_5.png", width=3200, height=2000, res=230)
+png("05_figures/main/Figure_5.png", width=3200, height=2000, res=230)
 draw(ht, heatmap_legend_side="right", annotation_legend_side="right",
      merge_legend=TRUE, padding=unit(c(2,2,2,8),"mm"))
 dev.off()

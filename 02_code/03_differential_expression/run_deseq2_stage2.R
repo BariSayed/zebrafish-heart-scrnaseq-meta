@@ -1,3 +1,4 @@
+# Run from the repository root; all paths below are repository-relative.
 # =====================================================================================
 # STAGE 2: Pseudobulk differential expression (DESeq2), Injured vs Healthy, per cell type
 # Reads the Stage-1 outputs produced by extract_pseudobulk.R:
@@ -12,12 +13,12 @@ suppressPackageStartupMessages({
   library(DESeq2)
 })
 
-setwd("~/zebrafish/results")
+# Run from the repository root; paths below are repository-relative.
 
 # ---- 1. Load Stage-1 outputs ----
-counts_mat <- read.csv("pseudobulk_counts_matrix.csv", row.names = 1, check.names = FALSE)
+counts_mat <- read.csv("03_processed_data/differential_expression/pseudobulk_counts_matrix.csv", row.names = 1, check.names = FALSE)
 counts_mat <- as.matrix(counts_mat)
-pb_meta <- read.csv("pseudobulk_sample_metadata.csv", stringsAsFactors = FALSE)
+pb_meta <- read.csv("03_processed_data/differential_expression/pseudobulk_sample_metadata.csv", stringsAsFactors = FALSE)
 
 cat("Loaded pseudobulk counts:", nrow(counts_mat), "genes x", ncol(counts_mat), "pseudo-samples\n")
 cat("Loaded pseudobulk metadata:", nrow(pb_meta), "rows\n")
@@ -101,6 +102,6 @@ for (cl in clusters_present) {
 }
 
 final_results <- do.call(rbind, all_results)
-write.csv(final_results, "pseudobulk_DESeq2_results_all_clusters.csv", row.names = FALSE)
+write.csv(final_results, "03_processed_data/differential_expression/intermediate/pseudobulk_DESeq2_results_all_clusters.csv", row.names = FALSE)
 cat("\n=== STAGE2_DONE: saved pseudobulk_DESeq2_results_all_clusters.csv,",
     nrow(final_results), "gene x cluster rows across", length(all_results), "clusters tested ===\n")

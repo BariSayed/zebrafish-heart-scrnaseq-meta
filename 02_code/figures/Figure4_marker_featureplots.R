@@ -1,8 +1,12 @@
+# Run from the repository root; all paths below are repository-relative.
+# NOTE: Seurat .rds objects under 04_seurat_objects/ are not distributed due to size.
+# Regenerate them with the pipeline in 02_code/ (from the GEO raw data in the README),
+# or place your own copy at the path shown before running.
 # ============================================================================
 # Figure 4 | Canonical marker FeaturePlot grid, 16 panels (8 cell types x 2 markers)
 # Zebrafish heart-injury scRNA-seq meta-analysis
 #
-# INPUT(S):  ~/zebrafish/results/rds/Seurat_Integrated_reclustered.rds
+# INPUT(S):  04_seurat_objects/Seurat_Integrated_reclustered.rds
 # OUTPUT:    Figure_4.png
 # NOTE: Build-time file name says 'Figure6' but content = manuscript Figure 5.
 # ============================================================================
@@ -13,7 +17,7 @@ suppressPackageStartupMessages({
   library(dplyr)
 })
 
-obj <- readRDS("~/zebrafish/results/rds/Seurat_Integrated_reclustered.rds")
+obj <- readRDS("04_seurat_objects/Seurat_Integrated_reclustered.rds")
 cat("Loaded object:", ncol(obj), "cells\n")
 
 cluster_col <- "seurat_clusters"
@@ -64,5 +68,5 @@ for (ct in names(gene_panels)) {
 }
 
 combined <- wrap_plots(plots, ncol = 4)
-ggsave("Figure_4.png", combined, width = 16, height = 16, dpi = 300, limitsize = FALSE)
+ggsave("05_figures/main/Figure_4.png", combined, width = 16, height = 16, dpi = 300, limitsize = FALSE)
 cat("DONE: saved Figure_4.png with", length(plots), "panels\n")

@@ -1,8 +1,12 @@
+# Run from the repository root; all paths below are repository-relative.
+# NOTE: Seurat .rds objects under 04_seurat_objects/ are not distributed due to size.
+# Regenerate them with the pipeline in 02_code/ (from the GEO raw data in the README),
+# or place your own copy at the path shown before running.
 # ============================================================================
 # Figure 2 | Batch-level QC violin plots (before vs after filtering, by GSE dataset)
 # Zebrafish heart-injury scRNA-seq meta-analysis
 #
-# INPUT(S):  ~/zebrafish/results/rds/all_samples_seurat_list_raw.rds
+# INPUT(S):  04_seurat_objects/all_samples_seurat_list_raw.rds
 # OUTPUT:    Figure_2.png
 # NOTE: Extracted verbatim from the master script scRNAseq_Meta_Analysis_Github_2026.r (QC section). Six stray note lines were commented out so the file runs standalone.
 # ============================================================================
@@ -15,7 +19,7 @@ library(scales)  # for comma formatting
 
 # ---- Load cleaned Seurat list ----
 # ---- Load cleaned Seurat list with metadata ----
-seurat_list <- readRDS("~/zebrafish/results/rds/all_samples_seurat_list_raw.rds")
+seurat_list <- readRDS("04_seurat_objects/all_samples_seurat_list_raw.rds")
 
 # ---- QC thresholds ----
 min_features <- 200
@@ -30,7 +34,7 @@ subfigure_title_size <- 16
 main_title_size <- 18
 
 # ---- Create folder for QC figures if not exists ----
-dir.create("~/zebrafish/results/qc_figures", recursive = TRUE, showWarnings = FALSE)
+dir.create("05_figures/qc", recursive = TRUE, showWarnings = FALSE)
 
 # ---- Compute QC metrics and filter samples ----
 qc_before <- list()
@@ -104,8 +108,8 @@ qc_after_summary <- qc_after_df %>%
   )
 
 # ---- Save to CSV ----
-write.csv(qc_before_summary, "~/zebrafish/results/qc_metrics_before_summary.csv", row.names = FALSE)
-write.csv(qc_after_summary, "~/zebrafish/results/qc_metrics_after_summary.csv", row.names = FALSE)
+write.csv(qc_before_summary, "03_processed_data/qc/qc_metrics_before_summary.csv", row.names = FALSE)
+write.csv(qc_after_summary, "03_processed_data/qc/qc_metrics_after_summary.csv", row.names = FALSE)
 
 # ---- Preview head ----
 head(qc_before_summary)
@@ -149,9 +153,9 @@ full_plot <- wrap_plots(vln_before, ncol = length(metrics)) /
              theme(plot.title = element_text(size = main_title_size, face = "bold"))
 
 # ---- Save figure ----
-ggsave(filename = "Figure_2.png",
+ggsave(filename = "05_figures/main/Figure_2.png",
        plot = full_plot, width = 24, height = 14, dpi = 600)
 
 # ---- Save filtered Seurat objects ----
-saveRDS(filtered_list, file = "~/zebrafish/results/rds/Seurat_List_QC_filter.rds")
+saveRDS(filtered_list, file = "04_seurat_objects/Seurat_List_QC_filter.rds")
 message("✅ QC completed, violin plots saved, and filtered Seurat objects saved!")

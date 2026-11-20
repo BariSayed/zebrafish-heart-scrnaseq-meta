@@ -1,8 +1,12 @@
+# Run from the repository root; all paths below are repository-relative.
+# NOTE: Seurat .rds objects under 04_seurat_objects/ are not distributed due to size.
+# Regenerate them with the pipeline in 02_code/ (from the GEO raw data in the README),
+# or place your own copy at the path shown before running.
 # ============================================================================
 # Figure 7A | Monocle3 pseudotime computation for 4 cell types (CM, Endocardial, Fibroblast, Macrophage)
 # Zebrafish heart-injury scRNA-seq meta-analysis
 #
-# INPUT(S):  ~/zebrafish/results/rds/Seurat_Integrated_reclustered.rds
+# INPUT(S):  04_seurat_objects/Seurat_Integrated_reclustered.rds
 # OUTPUT:    pseudotime/<CellType>_Pseudotime.png + <CellType>_pseudotime_values.csv
 # NOTE: Compute step; its *_pseudotime_values.csv feed Figure7C and Figure8. Run with system R 4.5.1 (monocle3).
 # ============================================================================
@@ -35,9 +39,9 @@ suppressPackageStartupMessages({
 
 set.seed(1234)
 
-rds_path     <- "/home/sbau/zebrafish/results/rds/Seurat_Integrated_reclustered.rds"
+rds_path     <- "04_seurat_objects/Seurat_Integrated_reclustered.rds"
 cluster_col  <- "integrated_snn_res.0.5"
-out_dir      <- "/home/sbau/zebrafish/results/pseudotime"
+out_dir      <- "03_processed_data/pseudotime"
 dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
 
 cat("Loading integrated Seurat object...\n")
@@ -103,7 +107,7 @@ run_pseudotime_for_celltype <- function(name, clusters) {
                    graph_label_size = 3) +
        ggtitle(paste0(gsub("_", " ", name), " (n=", n_cells, ")"))
 
-  out_png <- file.path(out_dir, paste0(name, "_Pseudotime.png"))
+  fig_dir <- "05_figures/pseudotime"; dir.create(fig_dir, showWarnings = FALSE, recursive = TRUE); out_png <- file.path(fig_dir, paste0(name, "_Pseudotime.png"))
   ggsave(out_png, p, width = 7, height = 6, dpi = 300)
   cat("  saved:", out_png, "\n")
 

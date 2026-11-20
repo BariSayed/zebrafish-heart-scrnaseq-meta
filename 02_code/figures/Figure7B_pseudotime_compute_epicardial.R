@@ -1,8 +1,12 @@
+# Run from the repository root; all paths below are repository-relative.
+# NOTE: Seurat .rds objects under 04_seurat_objects/ are not distributed due to size.
+# Regenerate them with the pipeline in 02_code/ (from the GEO raw data in the README),
+# or place your own copy at the path shown before running.
 # ============================================================================
 # Figure 7B | Monocle3 pseudotime computation for Epicardial cells (clusters 3+22)
 # Zebrafish heart-injury scRNA-seq meta-analysis
 #
-# INPUT(S):  ~/zebrafish/results/rds/Seurat_Integrated_reclustered.rds
+# INPUT(S):  04_seurat_objects/Seurat_Integrated_reclustered.rds
 # OUTPUT:    pseudotime/Epicardial_cell_Pseudotime.png + Epicardial_cell_pseudotime_values.csv
 # NOTE: Same pipeline as 6A, separate because epicardial clusters are handled on their own. Run with system R 4.5.1.
 # ============================================================================
@@ -13,9 +17,9 @@ suppressPackageStartupMessages({
   library(Seurat); library(SeuratWrappers); library(monocle3); library(ggplot2)
 })
 set.seed(1234)
-rds_path    <- "/home/sbau/zebrafish/results/rds/Seurat_Integrated_reclustered.rds"
+rds_path    <- "04_seurat_objects/Seurat_Integrated_reclustered.rds"
 cluster_col <- "integrated_snn_res.0.5"
-out_dir     <- "/home/sbau/zebrafish/results/pseudotime"
+out_dir     <- "03_processed_data/pseudotime"
 dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
 
 obj <- readRDS(rds_path)
@@ -43,7 +47,7 @@ p <- plot_cells(cds, color_cells_by = "pseudotime",
                 label_groups_by_cluster = FALSE, label_leaves = FALSE,
                 label_branch_points = FALSE, graph_label_size = 3) +
      ggtitle(paste0("Epicardial cell (n=", length(cells_keep), ")"))
-ggsave(file.path(out_dir, "Epicardial_cell_Pseudotime.png"), p, width = 7, height = 6, dpi = 300)
+fig_dir <- "05_figures/pseudotime"; dir.create(fig_dir, showWarnings = FALSE, recursive = TRUE); ggsave(file.path(fig_dir, "Epicardial_cell_Pseudotime.png"), p, width = 7, height = 6, dpi = 300)
 
 pt_df <- data.frame(cell = colnames(cds), pseudotime = monocle3::pseudotime(cds),
                     dpi = sub$dpi, Condition = sub$Condition, Dataset = sub$Dataset)
