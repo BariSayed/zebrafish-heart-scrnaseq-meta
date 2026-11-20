@@ -28,9 +28,6 @@ post-injury; **77,375 cells, 26 clusters** after SCT/rPCA integration).
 
 **Not in this repository (by design):**
 - **Raw data** — public in NCBI GEO: GSE227190, GSE159032, GSE262689.
-- **Integrated Seurat objects** (`.rds`, ~4.9 GB each) — not deposited in a public
-  archive; they regenerate exactly from the raw GEO data and the code here, and are
-  available on request.
 - **Manuscript file** — not deposited here.
 
 This repository (code, processed data, figures, tables) is archived on Zenodo for
