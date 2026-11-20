@@ -80,10 +80,10 @@ def panel(ax,df,ordered,title,cmap):
     cb=plt.colorbar(sc,ax=ax,fraction=0.04,pad=0.02); cb.set_label("-log10 adj. p",fontsize=7.5); cb.ax.tick_params(labelsize=6.5)
 
 fig,axes=plt.subplots(2,2,figsize=(14,8.5))
-panel(axes[0,0],d_gu,groups_lab["GO_UP"],"a   GO BP — upregulated","YlOrRd")
-panel(axes[0,1],d_ku,groups_lab["KEGG_UP"],"b   KEGG — upregulated","YlOrRd")
-panel(axes[1,0],d_gd,groups_lab["GO_DN"],"c   GO BP — downregulated","PuBu")
-panel(axes[1,1],d_kd,groups_lab["KEGG_DN"],"d   KEGG — downregulated","PuBu")
+panel(axes[0,0],d_gu,groups_lab["GO_UP"],"a   GO BP - upregulated","YlOrRd")
+panel(axes[0,1],d_ku,groups_lab["KEGG_UP"],"b   KEGG - upregulated","YlOrRd")
+panel(axes[1,0],d_gd,groups_lab["GO_DN"],"c   GO BP - downregulated","PuBu")
+panel(axes[1,1],d_kd,groups_lab["KEGG_DN"],"d   KEGG - downregulated","PuBu")
 for cv in [3,10,20]:
     axes[0,1].scatter([],[],s=cv*20,c='grey',edgecolors='black',linewidths=0.4,label=str(cv))
 axes[0,1].legend(title="genes",loc='upper left',bbox_to_anchor=(1.12,1.0),frameon=False,fontsize=7,title_fontsize=7.5,labelspacing=1.1)
