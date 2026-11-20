@@ -112,11 +112,11 @@ head(qc_before_summary)
 head(qc_after_summary)
 
 # This will give you exactly the table you showed:
-# nCells → number of cells in that sample
-# Mean_nFeature → mean detected genes per cell
-# Mean_nCount → mean UMI counts per cell
-# Mean_percentMT → mean mitochondrial gene percentage per cell
-# Mean_percentRibo → mean ribosomal gene percentage per cell
+# nCells -> number of cells in that sample
+# Mean_nFeature -> mean detected genes per cell
+# Mean_nCount -> mean UMI counts per cell
+# Mean_percentMT -> mean mitochondrial gene percentage per cell
+# Mean_percentRibo -> mean ribosomal gene percentage per cell
 
 # ---- Metrics to plot ----
 metrics <- c("nFeature_RNA", "nCount_RNA", "percent.mt", "percent.ribo")
