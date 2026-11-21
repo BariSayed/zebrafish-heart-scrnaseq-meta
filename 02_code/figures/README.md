@@ -17,7 +17,7 @@ script). File names follow the **current manuscript** figure numbers.
 | `Figure7C_pseudotime_UMAP_plot.py` | Fig 7 - pseudotime-on-UMAP, 5 panels | Python |
 | `Figure8_pseudotime_boxplot_by_dpi.py` | Fig 8 - pseudotime boxplots by dpi | Python |
 
-Figure 1 is a BioRender schematic (no code).
+Figure 1 is a graphical schematic (no code).
 
 ## Output file names
 Each plotting script writes an output named by its manuscript figure number:

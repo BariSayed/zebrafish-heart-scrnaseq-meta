@@ -21,11 +21,6 @@ authors:
     given-names: "Md. Mostafa Uddin"
 date-released: 2026-11-19
 repository-code: "https://github.com/BariSayed/zebrafish-heart-scrnaseq-meta"
-doi: 10.5281/zenodo.24376110
-identifiers:
-  - type: doi
-    value: 10.5281/zenodo.24376110
-    description: "Zenodo archive (data & code; reserved DOI, resolves once published)"
 license: MIT
 keywords:
   - zebrafish

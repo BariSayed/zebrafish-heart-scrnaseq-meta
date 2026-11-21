@@ -32,10 +32,6 @@ post-injury; **77,375 cells, 26 clusters** after SCT/rPCA integration).
 - **Raw data** - public in NCBI GEO: GSE227190, GSE159032, GSE262689.
 - **Manuscript file** - not deposited here.
 
-This repository (code, processed data, figures, tables) is archived on Zenodo for
-citation and persistence: **DOI [10.5281/zenodo.24376110](https://doi.org/10.5281/zenodo.24376110)**
-(reserved; resolves once the record is published).
-
 ## Reproduction order
 1. `02_code/01_integration/Seurat_SCT_Integration.R` - QC-filtered per-sample
    list -> SCTransform (3000 variable features, regress `percent.mt`, glmGamPoi) ->
